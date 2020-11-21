@@ -8,7 +8,7 @@
     <!-- Load style sheets -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.css">
 
-    <link rel="stylesheet" href="Transportation_Layout.css">
+    <link rel="stylesheet" href="Review_Layout.css">
 
     <!-- Use mobile-aware viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -50,7 +50,7 @@ window.onclick = function(event) {
   		<button onclick="myFunction()" class="dropbtn">MENU</button>
   		<div id="myDropdown" class="dropdown-content">
   			<a href="https://www.chicago.gov/city/en.html">Home</a>
-    		<a href="file:///C:/Users/Administrator/Downloads/transportation.html">Transportation</a>
+    		<a href="file:///C:/Users/Administrator/Downloads/Transportation_Page.html#">Transportation</a>
     		<a href="https://en.wikipedia.org/wiki/Hotspot_(Wi-Fi)">Saved Hotspots</a>
     		<a href="https://tasks.office.com/">My Planner</a>
   		</div>
@@ -68,34 +68,17 @@ window.onclick = function(event) {
 
 
 
-<div id="title"> <b>Transportation</b> </div>
-    <p><b>Your transportation options are listed below!</b></p>
+<p id="title"><b>Write Your Review Here!</b></p>
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/Chicago_Transit_Authority_Logo.svg">
-	<div id="CTA"><p><b>Chicago Transit Authority</b></p></div>
-	<b>Trains:</b>
-	<font color = "blue">Blue-Line</font>
-	,
-	<font color = "red">Red-Line</font>
-	,
-	<font color = "brown">Brown-Line</font>
-	,
-	<font color = "gold">Yellow-Line</font>
-	,
-	<font color = "green">Green-Line</font>
-	,
-	<font color = "orange">Orange-Line</font>
-	,
-	<font color = "pink">Pink-Line</font>
-	,
-	<font color = "purple">Purple-Line</font>
-	<p><b>Buses:</b>
-	<a href = "https://en.wikipedia.org/wiki/List_of_Chicago_Transit_Authority_bus_routes"><font color = "cyan">All Buses Can Be Found Here!</font></a></p>
+<img src="https://evolvespine.com/wp-content/uploads/2020/03/five-star-review.jpg" class="center">
 
-<img src="http://t1.gstatic.com/images?q=tbn:ANd9GcSMy0KygIfd3WFFlrITlvBedzZqwfdBt5HKwjR_8JW5ZU4pkxYd">
-	<div id="UBER"><p><b>Uber</b></p></div>
-	<b>Rides:</b>
-	<a href = "https://www.uber.com/us/en/ride/"><font color = "cyan">Call An Uber Near You!</font></a></p>
+<div class="REVIEW">
+<form action="https://www.chicago.gov/city/en.html">
+<textarea id="review" name="review" rows="4" cols="50"></textarea>
+
+<p><input id = "box" type="submit" value="Submit"></p>
+</form>
+</div>
 	
 </body>
 </html>

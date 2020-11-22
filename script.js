@@ -97,39 +97,8 @@ function closeHour(openHours) {
     overlay.classList.remove('active')
 }
 
-/* function to open Wait Time*/
 
-const openWaitButton = document.querySelectorAll('[data-open-target]')
-const closeWaitButton = document.querySelectorAll('[data-close-target]')
-const overlayWait = document.getElementById('overlay')
-
-openWaitButton.forEach(button => {
-    button.addEventListener('click', () => {
-        const openWait = document.querySelector(button.dataset.openTarget)
-        openWaits(openWait)
-    })
-})
-
-closeWaitButton.forEach(button => {
-    button.addEventListener('click', () => {
-        const openWait = button.closest('.openWait')
-        closeWaits(openWait)
-    })
-})
-
-function openWaits(openWait) {
-    if (openWait == null) return
-    openWait.classList.add('active')
-    overlayWait.classList.add('active')
-}
-
-function closeWaits(openWait) {
-    if (openWait == null) return
-    openWait.classList.remove('active')
-    overlayWait.classList.remove('active')
-}
-
-/* function to open Wait Time*/
+/* function to open Download*/
 
 const openDownButton = document.querySelectorAll('[data-open-target]')
 const closeDownButton = document.querySelectorAll('[data-close-target]')

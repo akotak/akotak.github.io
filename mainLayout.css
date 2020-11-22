@@ -17,6 +17,17 @@
     text-align:center;
 }
 
+/* https://stackoverflow.com/questions/41907250/zoom-in-zoom-out-img-automatically-using-css-only */
+@keyframes zoom-out {
+    100% {
+        transform: scale(1.2,1.2);
+    }
+}
+
+.carousel-item img {
+    animation: zoom-out 10s;
+}
+
 #bookmarkicon {
     height: 40px;
     width: 50px;
@@ -299,6 +310,18 @@ form.example {
     z-index: 1;
     padding: 70px 0;
     margin: 20px 70px;
+}
+
+.carousel-control-prev .carousel-control-prev-icon {
+    padding: 50px 30px;
+    position: absolute;
+    left: -80px;
+}
+
+.carousel-control-next .carousel-control-next-icon {
+    padding: 50px 30px;
+    position: absolute;
+    left: 160px;
 }
 
 #newplan {

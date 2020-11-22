@@ -49,7 +49,6 @@
             </div>
         </div>
 
-        <h1 id="title">Plan My Chicago Trip</h1>
 
         <form class="example" action="action_page.php">
             <input type="text" placeholder="Search.." name="search">
@@ -57,8 +56,15 @@
         </form>
 
         <div id="scheduler_here" class="dhx_cal_container dhx_scheduler_week" style="width: 100%; height: 1682px;" role="application">
-            <div class="buttonsPlanner" style="width: 980px; height: 59px; left: 0px; top: 0px;">
 
+            <h1 id="title">Plan My Chicago Trip</h1>
+            <br>
+            <br>
+            <br><br>
+            <div class="buttonsPlanner" style="width: 980px; height: 59px; left: 0px; top: 0px;">
+                <br>
+                <br>
+                <br><br>
                 <button class="toolbar-item" type="button"><a id="buttonDay" href="#" onclick="renderDate()">Day</a></button>
                 <button class="toolbar-item" type="button"><a id="buttonWeek" href="#" onclick="weeklyPlan()">Week</a></button>
                 <button class="toolbar-item" type="button"><a id="buttonMonth" href="#" onclick="renderDate()">Month</a></button>
@@ -84,28 +90,29 @@
                             <button data-close-target class="close-btnHours">&times;</button>
                         </div>
                         <div class="hours-body">
-                            jsndjncndcjjbfvhfhdkdfvbhfd jfdvbjfvf
+                            My Bonnie lies over the ocean. My Bonnie lies over the sea. My Bonnie lies over the ocean. Oh, bring back my Bonnie to me.
                         </div>
                     </div>
                     <div id="overlay"></div>
                 </div>
                 <br>
                 <br>
-                <div class="btnWait">
-                    <button data-open-target="#openWait" class="btnWait">Wait Time</button>
-                    <div class="openWait" id="openWait">
-                        <div class="waitContent" id="waitContent">
-                            <div class="titleWait">
-                                Manage your time
-                            </div>
-                            <button data-close-target class="close-btnWait">&times;</button>
+                <button data-open-target="#openHours" class="btnWait">Wait Time</button>
+                <div class="openHours" id="openHours">
+                    <div class="hoursContent" id="hoursContent">
+                        <div class="titleHours">
+                            Manage your time
                         </div>
-                        <div class="wait-body">
-                            jsndjncndcjjbfvhfhdkdfvbhfd jfdvbjfvf
-                        </div>
+                        <button data-close-target class="close-btnHours">&times;</button>
                     </div>
-                    <div id="overlayWait"></div>
+                    <div class="hours-body">
+                        Page not found
+                        <br> My Bonnie lies over the ocean. My Bonnie lies over the sea. My Bonnie lies over the ocean. Oh, bring back my Bonnie to me.
+                    </div>
                 </div>
+                <div id="overlay"></div>
+
+
                 <br>
                 <br>
                 <!-- Button for add to calendar to email or download-->

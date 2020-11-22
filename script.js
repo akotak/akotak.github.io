@@ -105,26 +105,26 @@ const overlayWait = document.getElementById('overlayWait')
 
 openWaitButton.forEach(button => {
     button.addEventListener('click', () => {
-        const openWaits = document.querySelector(button.dataset.openTarget)
-        openHour(openWaits)
+        const openWait = document.querySelector(button.dataset.openTarget)
+        openWait(openWait)
     })
 })
 
 closeWaitButton.forEach(button => {
     button.addEventListener('click', () => {
-        const openWaits = button.closest('.openHours')
-        closeHour(openWaits)
+        const openWait = button.closest('.openWait')
+        closeWaits(openWait)
     })
 })
 
-function openHour(openHours) {
-    if (openHours == null) return
-    openHours.classList.add('active')
-    overlay.classList.add('active')
+function openWaits(openWaits) {
+    if (openWait == null) return
+    openWait.classList.add('active')
+    overlayWait.classList.add('active')
 }
 
-function closeHour(openHours) {
-    if (openHours == null) return
-    openHours.classList.remove('active')
-    overlay.classList.remove('active')
+function closeWaits(openWaits) {
+    if (openWait == null) return
+    openWait.classList.remove('active')
+    overlayWait.classList.remove('active')
 }

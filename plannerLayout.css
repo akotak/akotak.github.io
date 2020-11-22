@@ -577,7 +577,7 @@ ul {
 }
 
 
-/* style open hours button */
+/* style open  button wait /hours */
 
 .btnHours {
     background-color: #c4d7e6;
@@ -588,5 +588,17 @@ ul {
     text-decoration: none;
     display: inline-block;
     margin: 4px 2px;
+    cursor: pointer;
+}
+
+.btnWait {
+    background-color: #c4d7e6;
+    border-radius: 15px;
+    border: none;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px 4px;
     cursor: pointer;
 }

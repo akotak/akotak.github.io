@@ -276,18 +276,21 @@
     
     .calendarW {
         margin-top: 50px;
-        margin-left: 300px;
+        margin-left: 155px;
         align-items: center;
         display: flex;
         justify-content: space-between;
-        width: 50%;
+        width: 78%;
         padding: 30px 30px;
         text-align: center;
         background-color: #8ac0da;
         color: #fff;
     }
     
-    .daysWeek {}
+    .daysWeek {
+        font-size: 20px;
+        font-weight: bold;
+    }
     
     .week-group {
         text-align: center;
@@ -552,64 +555,6 @@
         cursor: pointer;
         color: white;
         font-weight: bold;
-    }
-    
-    .btnWait {
-        background-color: rgb(0, 158, 241);
-        border-radius: 15px;
-        border: none;
-        padding: 10px 15px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        margin: 4px 2px;
-        cursor: pointer;
-        color: white;
-        font-weight: bold;
-    }
-    /*Style wait time*/
-    
-    .openWait {
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%) scale(0);
-        transition: 200ms ease-in-out;
-        border: 1px solid black;
-        border-radius: 10px;
-        z-index: 3;
-        background-color: #82cdff;
-        width: 500px;
-        max-width: 80;
-    }
-    
-    .openWait.active {
-        transform: translate(-50%, -50%) scale(1);
-    }
-    
-    .waitContent {
-        padding: 10px 15px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        border-bottom: 1px solid black;
-    }
-    
-    .waitContent .titleWait {
-        text-align: center;
-        font-size: 1.25rem;
-        font-weight: bold;
-    }
-    
-    .waitContent .close-btnWait {
-        cursor: pointer;
-        border: none;
-        outline: none;
-        background: none;
-    }
-    
-    .wait-body {
-        padding: 10px 15px;
     }
     /* dowload button*/
     

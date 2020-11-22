@@ -1,22 +1,202 @@
-﻿﻿
 <!DOCTYPE html>
+<html lang="en">
 
-<html>
 <head>
-    <meta charset="utf-8">
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
     <title>Plan My Chicago Trip</title>
 
-    <!-- Load style sheets -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.css">
-
-    <link rel="stylesheet" href="mainLayout.css">
-
-    <!-- Use mobile-aware viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" async>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
 </head>
 
-<body>
-    <div id="title1"> <b>Planner</b> </div>
-    <p>I'm hosted with GitHub Pages.</p>
-</body>
+<body onload="renderDate()">
+    <div class="planner">
+        <div class="topnav">
+            <a href="#" class="active" style="text-align:center;" style=> Plan My Chicago Trip </a>
+            <!-- Navigation links -->
+            <div id="menu">
+                <a href="#" class="home"> Home</a>
+                <a href="#" class="transporation"> Transporation</a>
+                <a href="#" class="savedHotspots"> Saved Hotspots</a>
+                <a href="#" class="myPlanner"> My Planner</a>
+            </div>
+
+            <!-- Hamburger menu -->
+            <a href="javascript:void(0)" class="iconMenu" onclick="hamburgerMenu()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+        <div id="scheduler_here" class="dhx_cal_container dhx_scheduler_week" style="width: 100%; height: 1682px;" role="application">
+            <div class="buttonsPlanner" style="width: 980px; height: 59px; left: 0px; top: 0px;">
+
+                <button class="toolbar-item" type="button"><a id="buttonDay" href="#" onclick="renderDate()">Day</a></button>
+                <button class="toolbar-item" type="button"><a id="buttonWeek" href="#" onclick="renderDate()">Week</a></button>
+                <button class="toolbar-item" type="button"><a id="buttonMonth" href="#" onclick="renderDate()">Month</a></button>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="btnHours">
+                    <button class="openingHours">Opening Hours</button>
+                </div>
+                <br>
+                <br>
+                <div class="btnWait"><button class="watingTimes">Waiting Times</button> </div>
+                <br>
+                <br>
+                <!-- Button for add to calendar to email or download-->
+                <div title="Add to Calendar" class="addeventatc">
+                    Download!
+                    <span class="start">12/05/2020 08:00 AM</span>
+                    <span class="end">12/05/2020 10:00 AM</span>
+                    <span class="timezone">America/Chicago</span>
+                    <span class="title">Summary of the event</span>
+                    <span class="description">Description of the event</span>
+                    <span class="location">Location of the event</span>
+
+                </div>
+
+            </div>
+
+
+            <!-- Buttons for changing to Month/Week/Day 
+        <div class="buttonsPlan">
+            <button class="toolbar-item" type="button"><a id="buttonDay" href="#" onclick="renderDate()">Day</a></button>
+            <button class="toolbar-item" type="button"><a id="buttonWeek" href="#" onclick="renderDate()">Week</a></button>
+            <button class="toolbar-item" type="button"><a id="buttonMonth" href="#" onclick="renderDate()">Month</a></button>
+
+        </div>-->
+
+
+            <!--Calendar showeing the month -->
+
+            <div onload="renderDate()" class="plannerMonth">
+                <br>
+                <br>
+                <br>
+                <div class="calendar">
+                    <div class="month">
+                        <div class="prev" onclick="moveDate('prev')">
+                            <span>&#10094;</span>
+                        </div>
+                        <div>
+                            <h2 id="month"></h2>
+                            <p id="date_str"></p>
+                        </div>
+                        <div class="next" onclick="moveDate('next')">
+                            <span>&#10095;</span>
+                        </div>
+                    </div>
+                    <div class="weekdays">
+                        <div>Sun</div>
+                        <div>Mon</div>
+                        <div>Tue</div>
+                        <div>Wed</div>
+                        <div>Thu</div>
+                        <div>Fri</div>
+                        <div>Sat</div>
+                    </div>
+                    <div class="days">
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!--Calendar showeing the month -->
+
+        <div onload="" class="plannerWeek" onload="">
+            <div class="calendar-week">
+                <div class="weekdays-top">
+                    <ul>
+                        <li class="cd-schedule__group">
+                            <div class="monday"> <span>Monday</span> </div>
+                    </ul>
+                    <ul>
+                        <div class="monday"> <span>Tuesday</span> </div>
+                    </ul>
+                    <ul>
+                        <div class="monday"> <span>Wednesday</span> </div>
+                    </ul>
+                    <ul>
+                        <div class="monday"> <span>Thursday</span> </div>
+                    </ul>
+                    <ul>
+                        <div class="monday"> <span>Friday</span> </div>
+                    </ul>
+                    </li>
+                </div>
+
+                <div class="days">
+                </div>
+                <div class="cd-schedule__timeline">
+                    <ul>
+                        <li><span>09:00</span></li>
+                        <li><span>09:30</span></li>
+                        <li><span>10:00</span></li>
+                        <li><span>10:30</span></li>
+                        <li><span>11:00</span></li>
+                        <li><span>11:30</span></li>
+                        <li><span>12:00</span></li>
+                        <li><span>12:30</span></li>
+                        <li><span>13:00</span></li>
+                        <li><span>13:30</span></li>
+                        <li><span>14:00</span></li>
+                        <li><span>14:30</span></li>
+                        <li><span>15:00</span></li>
+                        <li><span>15:30</span></li>
+                        <li><span>16:00</span></li>
+                        <li><span>16:30</span></li>
+                        <li><span>17:00</span></li>
+                        <li><span>17:30</span></li>
+                        <li><span>18:00</span></li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    </div>
+
+    </div>
+
+
+
+
+    <script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
+
+    <!--<button name="jump" onclick="jump()">Go</button>-->
+    <script src="script.js"></script>
+
+    <!-- Optional JavaScript for bootstrap -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+
+    <script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
+
+    <body>
+
 </html>

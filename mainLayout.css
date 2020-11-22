@@ -312,6 +312,18 @@ form.example {
     margin: 20px 70px;
 }
 
+.carousel-control-prev .carousel-control-prev-icon {
+    padding: 50px 30px;
+    position: absolute;
+    left: -80px;
+}
+
+.carousel-control-next .carousel-control-next-icon {
+    padding: 50px 30px;
+    position: absolute;
+    left: 160px;
+}
+
 #newplan {
     background-color: #4CAF50;
     border: none;

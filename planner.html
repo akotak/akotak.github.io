@@ -59,7 +59,6 @@
 
 
             <h1 id="title">Plan My Chicago Trip</h1>
-            <a href="javascript:history.back()">Back to Previous Page</a>
 
             <br>
             <br>
@@ -75,6 +74,7 @@
                 <button class="toolbar-item" type="button"><a id="buttonMonth" href="#" onclick="renderDate()">Month</a></button>
                 <br>
                 <br>
+                <br><br><br><br>
                 <br>
                 <br>
                 <br>
@@ -92,13 +92,14 @@
                         404 Page not found!
                         <br>
                         <br>
+
                         <br><br>
                     </div>
                 </div>
                 <div id="overlay"></div>
                 <br>
                 <br>
-
+                <br>
                 <!--Wait time-->
                 <button data-open-target="#openWait" class="btnWait">Wait Time</button>
                 <div class="openWait" id="openWait">
@@ -115,21 +116,11 @@
                         <br><br>
                     </div>
                 </div>
-<<<<<<< HEAD
                 <div id="overlay"> </div>
                 <br>
-                <br>
+                <br><br>
                 <!--Download button:  https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_download_button-->
                 <button data-open-target="#openDown" class="btnDown"><i class="fa fa-download"></i>
-=======
-                <div id="overlay">
-                </div>
-                <br>
-                <br>
-                <!--Download button:  https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_download_button-->
-                <button class="btn">
-                    <i class="fa fa-download"></i>
->>>>>>> a52b79fe4d8abc1825bfb0c4f20edec532520c8d
                     Download
                 </button>
                 <div class="openDown" id="openDown">
@@ -145,7 +136,7 @@
                 <br>
                 <!--Acces to your own calendar -->
                 <div title="Add to Calendar" class="addeventatc">
-                    Access your calendar
+                    Personal calendar
                     <span class="start">12/05/2020 08:00 AM</span>
                     <span class="end">12/05/2020 10:00 AM</span>
                     <span class="timezone">America/Chicago</span>
@@ -154,8 +145,8 @@
                     <span class="location">Location of the event</span>
                 </div>
                 <!--
-            Calendar month
-        -->
+                    Calendar month
+                -->
             </div>
             <div onload="renderDate()" class="plannerMonth">
                 <div class="calendar">

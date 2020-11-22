@@ -543,6 +543,7 @@ ul {
 }
 
 .hoursContent .titleHours {
+    text-align: center;
     font-size: 1.25rem;
     font-weight: bold;
 }
@@ -573,4 +574,19 @@ ul {
 #overlay.active {
     opacity: 1;
     pointer-events: all;
+}
+
+
+/* style open hours button */
+
+.btnHours {
+    background-color: #c4d7e6;
+    border-radius: 15px;
+    border: none;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
 }

@@ -27,8 +27,8 @@
 
 </head>
 
-<body onload="renderDate()" style="background-color:#d9eef8ea;">
-    <div class="planner" style="background-color:#d9eef8ea;">
+<body onload="renderDate()" style="background-color:#c4dce6ea;">
+    <div class="planner" style="background-color:#c4dce6ea;">
         <!-- navigation bar - https://www.youtube.com/watch?v=DZg6UfS5zYg&t=1812s&ab_channel=TraversyMedia -->
         <div class="menu-wrap">
             <input type="checkbox" class="toggler">
@@ -66,6 +66,8 @@
             <div class="buttonsPlanner" style="width: 980px; height: 59px; left: 0px; top: 0px;">
                 <br>
                 <br>
+                <a href="javascript:history.back()">Back to Previous Page</a>
+
                 <br><br>
                 <button class="toolbar-item" type="button"><a id="buttonDay" href="PlannerDay.html" onclick="renderDate()">Day</a></button>
                 <button class="toolbar-item" type="button"><a id="buttonWeek" href="#" onclick="weeklyPlan()">Week</a></button>
@@ -98,24 +100,22 @@
                 <br>
                 <br>
                 <!--Wait time-->
-                <button data-open-target="#openHours" class="btnWait">Wait Time</button>
-                <div class="openHours" id="openHours">
-                    <div class="hoursContent" id="hoursContent">
-                        <div class="titleHours">
+                <button data-open-target="#openWait" class="btnWait">Wait Time</button>
+                <div class="openWait" id="openWait">
+                    <div class="waitContent" id="waitContent">
+                        <div class="titleWait">
                             Manage your time
                         </div>
-                        <button data-close-target class="close-btnHours">&times;</button>
+                        <button data-close-target class="close-btnWait">&times;</button>
                     </div>
-                    <div class="hours-body">
+                    <div class="wait-body">
                         404 Page not found!
                         <br>
                         <br>
                         <br><br>
                     </div>
                 </div>
-                <div id="overlay">
-
-                </div>
+                <div id="overlay"> </div>
                 <br>
                 <br>
                 <!--Download button:  https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_download_button-->

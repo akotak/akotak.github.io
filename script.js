@@ -101,12 +101,12 @@ function closeHour(openHours) {
 
 const openWaitButton = document.querySelectorAll('[data-open-target]')
 const closeWaitButton = document.querySelectorAll('[data-close-target]')
-const overlayWait = document.getElementById('overlayWait')
+const overlayWait = document.getElementById('overlay')
 
 openWaitButton.forEach(button => {
     button.addEventListener('click', () => {
         const openWait = document.querySelector(button.dataset.openTarget)
-        openWait(openWait)
+        openWaits(openWait)
     })
 })
 
@@ -117,13 +117,13 @@ closeWaitButton.forEach(button => {
     })
 })
 
-function openWaits(openWaits) {
+function openWaits(openWait) {
     if (openWait == null) return
     openWait.classList.add('active')
     overlayWait.classList.add('active')
 }
 
-function closeWaits(openWaits) {
+function closeWaits(openWait) {
     if (openWait == null) return
     openWait.classList.remove('active')
     overlayWait.classList.remove('active')

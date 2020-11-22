@@ -1,12 +1,3 @@
-function hamburgerMenu() {
-    var x = document.getElementById("menu");
-    if (x.style.display === "block") {
-        x.style.display = "none";
-    } else {
-        x.style.display = "block";
-    }
-}
-
 var dt = new Date();
 
 function renderDate() {
@@ -72,4 +63,36 @@ function weeklyPlan() {
     } else {
         x.style.display = "block";
     }
+}
+
+/* function to open Opening Hours*/
+
+const openHoursButton = document.querySelectorAll('[data-open-target]')
+const closeHoursButton = document.querySelectorAll('[data-close-target]')
+const overlay = document.getElementById('overlay')
+
+openHoursButton.forEach(button => {
+    button.addEventListener('click', () => {
+        const openHours = document.querySelector(button.dataset.openTarget)
+        openHour(openHours)
+    })
+})
+
+closeHoursButton.forEach(button => {
+    button.addEventListener('click', () => {
+        const openHours = button.closest('.openHours')
+        closeHour(openHours)
+    })
+})
+
+function openHour(openHours) {
+    if (openHours == null) return
+    openHours.classList.add('active')
+    overlay.classList.add('active')
+}
+
+function closeHour(openHours) {
+    if (openHours == null) return
+    openHours.classList.add('active')
+    overlay.classList.add('active')
 }

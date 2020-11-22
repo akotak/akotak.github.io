@@ -17,6 +17,17 @@
     text-align:center;
 }
 
+/* https://stackoverflow.com/questions/41907250/zoom-in-zoom-out-img-automatically-using-css-only */
+@keyframes zoom-out {
+    100% {
+        transform: scale(1.2,1.2);
+    }
+}
+
+.carousel-item img {
+    animation: zoom-out 5s;
+}
+
 #bookmarkicon {
     height: 40px;
     width: 50px;

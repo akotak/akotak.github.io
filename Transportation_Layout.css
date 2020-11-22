@@ -10,6 +10,14 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+body {
+	
+	background-image: url("https://images.unsplash.com/photo-1524168272322-bf73616d9cb5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
 
 #title {
 	font-family: Impact, Charcoal, sans-serif;
@@ -18,20 +26,36 @@
 	left: 75px;
 	font-size: 3rem;
 }
+#TRAINS {
+	text-align: center;
+}
+#BUSES {
+	text-align: center;
+	color: white;
+}
 
 #CTA {
 	font-size: 30px;
 	padding-left: 15px;
 	font-style: italic;
+	text-align: center;
+	color: white;
 
 }
 #UBER {
 	font-size: 30px;
 	padding-left: 50px;
 	font-style: italic;
+	text-align: center;
 
 }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 
 /* Nav Bar */
 .btn {

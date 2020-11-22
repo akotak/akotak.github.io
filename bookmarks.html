@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 <html>
 <head>
@@ -62,11 +62,12 @@
     <br>
     <br>
     <h1>Bookmarks</h1>
+    <a href="javascript:history.back()">Back to Previous Page</a>
     <ul>
-      <li id="data"></li>
+        <li id="data"></li>
     </ul>
     <script>
-      document.getElementById("data").innerHTML = getQueryStringValue("data");
+        document.getElementById("data").innerHTML = getQueryStringValue("data");
     </script>
 
 </body>

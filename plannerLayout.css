@@ -176,7 +176,7 @@
     justify-content: center;
     transform: scale(0);
     transition: all 0.4s ease;
-    z-index: 5;
+    z-index: 99;
 }
 
 .menu-wrap .menu>div>div {
@@ -262,19 +262,10 @@ body {
     background-color: #a5d1e6ea;
 }
 
-* {
-    box-sizing: border-box;
-}
 
 ul {
     list-style-type: none;
 }
-
-* {
-    margin: 0;
-    box-sizing: border-box;
-}
-
 
 /*Style buttons month/week/day*/
 
@@ -465,9 +456,9 @@ ul {
     display: block;
     height: 20px;
     position: absolute;
-    z-index: 7;
     width: 750px;
     color: rgba(0, 0, 0, .75);
+    z-index: 1;
 }
 
 .monday {

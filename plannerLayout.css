@@ -296,10 +296,17 @@ ul {
 
 /*style calendar */
 
-.addeventatc {
+#addeventatc {
+    border: none;
+    background-color: #82cdff;
     position: absolute;
     margin-left: 20px;
     flex-direction: column;
+}
+
+.addeventatc:hover {
+    cursor: pointer;
+    background-color: #999;
 }
 
 
@@ -580,7 +587,7 @@ ul {
 /* style open  button wait /hours */
 
 .btnHours {
-    background-color: #c4d7e6;
+    background-color: rgb(0, 158, 241);
     border-radius: 15px;
     border: none;
     padding: 10px 25px;
@@ -589,16 +596,38 @@ ul {
     display: inline-block;
     margin: 4px 2px;
     cursor: pointer;
+    color: white;
+    font-weight: bold;
 }
 
 .btnWait {
-    background-color: #c4d7e6;
+    background-color: rgb(0, 158, 241);
     border-radius: 15px;
     border: none;
-    padding: 10px 25px;
+    padding: 10px 30px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    margin: 10px 4px;
+    margin: 4px 2px;
     cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
+
+
+/* dowload button*/
+
+.btn {
+    background-color: rgb(0, 158, 241);
+    ;
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.btn:hover {
+    background-color: RoyalBlue;
 }

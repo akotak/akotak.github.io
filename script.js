@@ -96,3 +96,35 @@ function closeHour(openHours) {
     openHours.classList.remove('active')
     overlay.classList.remove('active')
 }
+
+/* function to open Wait Time*/
+
+const openWaitButton = document.querySelectorAll('[data-open-target]')
+const closeWaitButton = document.querySelectorAll('[data-close-target]')
+const overlayWait = document.getElementById('overlayWait')
+
+openWaitButton.forEach(button => {
+    button.addEventListener('click', () => {
+        const openWaits = document.querySelector(button.dataset.openTarget)
+        openHour(openWaits)
+    })
+})
+
+closeWaitButton.forEach(button => {
+    button.addEventListener('click', () => {
+        const openWaits = button.closest('.openHours')
+        closeHour(openWaits)
+    })
+})
+
+function openHour(openHours) {
+    if (openHours == null) return
+    openHours.classList.add('active')
+    overlay.classList.add('active')
+}
+
+function closeHour(openHours) {
+    if (openHours == null) return
+    openHours.classList.remove('active')
+    overlay.classList.remove('active')
+}

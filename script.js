@@ -93,6 +93,6 @@ function openHour(openHours) {
 
 function closeHour(openHours) {
     if (openHours == null) return
-    openHours.classList.add('active')
-    overlay.classList.add('active')
+    openHours.classList.remove('active')
+    overlay.classList.remove('active')
 }

@@ -62,3 +62,14 @@ function moveDate(arrows) {
     }
     renderDate();
 }
+
+
+/* function to show the weekly schedule */
+function weeklyPlan() {
+    var x = document.getElementById("weekPlan");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}

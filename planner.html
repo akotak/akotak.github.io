@@ -38,7 +38,7 @@
             <div class="buttonsPlanner" style="width: 980px; height: 59px; left: 0px; top: 0px;">
 
                 <button class="toolbar-item" type="button"><a id="buttonDay" href="#" onclick="renderDate()">Day</a></button>
-                <button class="toolbar-item" type="button"><a id="buttonWeek" href="#" onclick="renderDate()">Week</a></button>
+                <button class="toolbar-item" type="button"><a id="buttonWeek" href="#" onclick="weeklyPlan()">Week</a></button>
                 <button class="toolbar-item" type="button"><a id="buttonMonth" href="#" onclick="renderDate()">Month</a></button>
                 <br>
                 <br>
@@ -113,17 +113,16 @@
                         <div>Sat</div>
                     </div>
                     <div class="days">
-
                     </div>
-
                 </div>
             </div>
         </div>
 
-        <!--Calendar showeing the month -->
+        <!--Calendar showing the week -->
 
-        <div onload="" class="plannerWeek" onload="">
+        <div id="weekPlan" class="plannerWeek" onclick="weelyPlan()">
             <div class="calendar-week">
+
                 <div class="weekdays-top">
                     <ul>
                         <li class="cd-schedule__group">
@@ -179,6 +178,7 @@
     </div>
 
     </div>
+
 
 
 

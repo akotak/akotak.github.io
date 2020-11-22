@@ -25,7 +25,7 @@
 }
 
 .carousel-item img {
-    animation: zoom-out 5s;
+    animation: zoom-out 10s;
 }
 
 #bookmarkicon {

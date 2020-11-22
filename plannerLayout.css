@@ -259,7 +259,6 @@ form.example::after {
 
 body {
     background-color: #255469ea;
-    ;
 }
 
 * {
@@ -325,6 +324,10 @@ ul {
     flex-direction: column;
 }
 
+.planner {
+    background-color: #206d91ea;
+}
+
 
 /* Style month */
 
@@ -384,8 +387,7 @@ ul {
 }
 
 .today {
-    background-color: rgb(90, 162, 221);
-    ;
+    background-color: #8ac0da;
     color: #fff;
 }
 
@@ -501,16 +503,6 @@ ul {
     /* day label*/
     width: 100%;
     padding: 0 var(--component-padding);
-}
-
-.jj {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    min-height: 100vh;
-    padding: 4rem 0;
-    font-family: -system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 

@@ -11,18 +11,26 @@
     box-sizing: border-box;
 }
 
+#icons{
+    height: 40px;
+    width: 50px;
+    text-align:center;
+}
+
 #title {
     font-family: Impact, Charcoal, sans-serif;
     position: absolute;
     top: 5px;
     left: 75px;
     font-size: 3rem;
+    text-shadow: 2px 2px #000000;
 }
 
 #hotspots {
     font-family: Impact, Charcoal, sans-serif;
     padding: 70px 0;
     text-align: center;
+    text-shadow: 2px 2px #000000;
 }
 
 
@@ -81,13 +89,27 @@ a.button {
         height: 100%;
     }
 
-    .showcase h1 {
-        font-size: 3rem;
-    }
+.showcase h1 {
+    font-size: 3rem;
+}
 
-    .showcase p {
-        font-size: 1.3rem;
-    }
+.showcase h5 {
+    color: lavenderblush;
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 40px;
+    position: absolute;
+    top: -430px;
+    left: -130px;
+    text-shadow: 2px 2px #FF0000;
+}
+
+.showcase p {
+    font-size: 1.3rem;
+    font-family: "Arial Black", Gadget, sans-serif;
+    text-shadow: 2px 2px #000;
+    position: absolute;
+    top: -35px;
+}
 
 .btn {
     display: inline-block;
@@ -292,9 +314,6 @@ form.example {
     border-color: var(--primary-color);
 }
 
-#h5 {
-    color: black;
-}
 /* Style the submit button */
 form.example button {
     float: right;

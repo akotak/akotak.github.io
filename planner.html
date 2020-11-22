@@ -97,8 +97,7 @@
                 <div id="overlay"></div>
                 <br>
                 <br>
-                <br>
-                <br>
+
                 <!--Wait time-->
                 <button data-open-target="#openWait" class="btnWait">Wait Time</button>
                 <div class="openWait" id="openWait">
@@ -119,9 +118,18 @@
                 <br>
                 <br>
                 <!--Download button:  https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_download_button-->
-                <button class="btn"><i class="fa fa-download"></i>
+                <button data-open-target="#openDown" class="btnDown"><i class="fa fa-download"></i>
                     Download
                 </button>
+                <div class="openDown" id="openDown">
+                    <div class="downContent" id="downContent">
+                        <div class="titleDown">
+                            Thank you!
+                        </div>
+                        <button data-close-target class="close-btnDown">&times;</button>
+                    </div>
+                    <div id="overlay"></div>
+                </div>
                 <br>
                 <br>
                 <!--Acces to your own calendar -->

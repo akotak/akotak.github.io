@@ -128,3 +128,35 @@ function closeWaits(openWait) {
     openWait.classList.remove('active')
     overlayWait.classList.remove('active')
 }
+
+/* function to open Wait Time*/
+
+const openDownButton = document.querySelectorAll('[data-open-target]')
+const closeDownButton = document.querySelectorAll('[data-close-target]')
+const overlayDown = document.getElementById('overlay')
+
+openDownButton.forEach(button => {
+    button.addEventListener('click', () => {
+        const openDown = document.querySelector(button.dataset.openTarget)
+        openDownl(openDown)
+    })
+})
+
+closeDownButton.forEach(button => {
+    button.addEventListener('click', () => {
+        const openDown = button.closest('.openDown')
+        closeDownl(openDown)
+    })
+})
+
+function openDownl(openDown) {
+    if (openDown == null) return
+    openDown.classList.add('active')
+    overlayDown.classList.add('active')
+}
+
+function closeDownl(openDown) {
+    if (openDown == null) return
+    openDown.classList.remove('active')
+    overlayDown.classList.remove('active')
+}

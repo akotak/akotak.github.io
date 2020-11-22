@@ -559,7 +559,7 @@ ul {
     background-color: rgb(0, 158, 241);
     border-radius: 15px;
     border: none;
-    padding: 10px 30px;
+    padding: 10px 28px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -618,16 +618,58 @@ ul {
 
 /* dowload button*/
 
-.btn {
+.btnDown {
     background-color: rgb(0, 158, 241);
     border: none;
     color: white;
     font-weight: bold;
+    margin-top: 10px;
     padding: 12px 30px;
     cursor: pointer;
     font-size: 20px;
+    border: none;
+    border-radius: 15px;
 }
 
-.btn:hover {
-    background-color: RoyalBlue;
+.btnDown:hover {
+    background-color: rgb(153, 193, 226);
+}
+
+.openDown {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 3;
+    background-color: #82cdff;
+    width: 500px;
+    max-width: 80;
+}
+
+.openDown.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.downContent {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.downContent .titleDown {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.downContent .close-btnDown {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
 }

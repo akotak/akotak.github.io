@@ -17,6 +17,12 @@
     text-align:center;
 }
 
+#bookmarkicon {
+    height: 40px;
+    width: 50px;
+    position: absolute;
+}
+
 #title {
     font-family: Impact, Charcoal, sans-serif;
     position: absolute;

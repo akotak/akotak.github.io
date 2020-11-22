@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="PlannerDayStyle.css">
+  <title>Plan My Chicago Trip</title>
+  
+</head>
+
+<body>
+  <!-- <h1 id="title">Plan My Chicago Trip</h1> -->
+  <header class="jumbotron">
+   
+    <p id="currentDay" class="lead"></p>
+    <p id="currentTime" class="lead"></p>
+  </header>
+  <form class="example" action="action_page.php">
+    <input type="text" placeholder="Search.." name="search">
+    <button type="submit"><i class="fa fa-search"></i></button>
+</form>
+
+  <div class="buttonsPlanner" style="width: 980px; height: 59px; left: 0px; top: 0px;">
+
+    <button class="toolbar-item" type="button"><a id="buttonDay" href="#" onclick="renderDate()">Day</a></button>
+    <button class="toolbar-item" type="button"><a id="buttonWeek" href="#" onclick="weeklyPlan()">Week</a></button>
+    <button class="toolbar-item" type="button"><a id="buttonMonth" href="#" onclick="renderDate()">Month</a></button>
+    
+        </div>
+    
+  
+   <!-- Button for add to calendar to email or download-->
+                <div title="Add to Calendar" class="addeventatc">
+                    Download!
+                    <span class="start">12/05/2020 08:00 AM</span>
+                    <span class="end">12/05/2020 10:00 AM</span>
+                    <span class="timezone">America/Chicago</span>
+                    <span class="title">Summary of the event</span>
+                    <span class="description">Description of the event</span>
+                    <span class="location">Location of the event</span>
+
+                </div>
+
+            </div>
+
+            <body onload="renderDate()">
+              <div class="planner">
+                  <!-- navigation bar - https://www.youtube.com/watch?v=DZg6UfS5zYg&t=1812s&ab_channel=TraversyMedia -->
+                  <div class="menu-wrap">
+                      <input type="checkbox" class="toggler">
+                      <div class="hamburger">
+                          <div></div>
+                      </div>
+                      <div class="menu">
+                          <div>
+                              <div>
+                                  <ul>
+                                      <li><a href="index.html">Home</a></li>
+                                      <li><a href="transportation.html">Transportation Information</a></li>
+                                      <li><a href="bookmarks.html">Bookmarked Locations</a></li>
+                                      <li><a href="planner.html">My Planner</a></li>
+                                  </ul>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+          
+                 
+                 
+
+  <div class="container container-fluid time-block">
+
+    <!-- 9 am -->
+    <div class="input-group mb-3">
+      <div class="input-group-prepend row">
+        <span class="input-group-text hour">09:00 AM</span>
+      </div>
+      <textarea value="" id="comment9am" type="text" cols="100" rows="2" class="form-control description textarea"></textarea>
+      <div class="input-group-append">
+        <button id="button9am" class="btn btn-outline-secondary saveBtn" type="button"><i
+            class="far fa-save"></i></button>
+      </div>
+    </div>
+    
+
+    <!-- 10 am-->
+    <div class="input-group mb-3">
+      <div class="input-group-prepend row">
+        <span class="input-group-text hour">10:00 AM</span>
+      </div>
+      <textarea id="comment10am" value="" type="text" cols="100" rows="2" class="form-control description textarea"></textarea>
+      <div class="input-group-append">
+        <button id="button10am" class="btn btn-outline-secondary saveBtn" type="button"><i
+            class="far fa-save"></i></button>
+      </div>
+    </div>
+
+    <!--11 am-->
+    <div class="input-group mb-3">
+      <div class="input-group-prepend row">
+        <span class="input-group-text hour">11:00 AM</span>
+        </div>
+        <textarea id="comment11am" value="" type="text" cols="100" rows="2" class="form-control description textarea"></textarea>
+        <div class="input-group-append">
+          <button id="button11am" class="btn btn-outline-secondary saveBtn" type="button"><i
+              class="far fa-save"></i></button>
+        </div>
+      </div>
+
+      <!--12 pm-->
+      <div class="input-group mb-3">
+        <div class="input-group-prepend row">
+          <span class="input-group-text hour">12:00 PM</span>
+        </div>
+        <textarea id="comment12pm" value="" type="text" cols="100" rows="2" class="form-control description textarea"></textarea>
+        <div class="input-group-append">
+          <button id="button12pm" class="btn btn-outline-secondary saveBtn" type="button"><i
+              class="far fa-save"></i></button>
+        </div>
+      </div>
+
+      <!--1 pm-->
+      <div class="input-group mb-3">
+        <div class="input-group-prepend row">
+          <span class="input-group-text hour">01:00 PM</span>
+        </div>
+        <textarea id="comment1pm" value="" type="text" cols="100" rows="2" class="form-control description textarea"></textarea>
+        <div class="input-group-append">
+          <button id="button1pm" class="btn btn-outline-secondary saveBtn" type="button"><i
+              class="far fa-save"></i></button>
+        </div>
+      </div>
+
+      <!--2 pm-->
+      <div class="input-group mb-3">
+        <div class="input-group-prepend row">
+          <span class="input-group-text hour">02:00 PM</span>
+        </div>
+        <textarea id="comment2pm" value="" type="text" cols="100" rows="2" class="form-control description textarea"></textarea>
+        <div class="input-group-append">
+          <button id="button2pm" class="btn btn-outline-secondary saveBtn" type="button"><i
+              class="far fa-save"></i></button>
+        </div>
+      </div>
+
+      <!--3 pm-->
+      <div class="input-group mb-3">
+        <div class="input-group-prepend row">
+          <span class="input-group-text hour">03:00 PM</span>
+        </div>
+        <textarea id="comment3pm" value="" type="text" cols="100" rows="2" class="form-control description textarea"></textarea>
+        <div class="input-group-append">
+          <button id="button3pm" class="btn btn-outline-secondary saveBtn" type="button"><i
+              class="far fa-save"></i></button>
+        </div>
+      </div>
+
+      <!--4 pm-->
+      <div class="input-group mb-3">
+        <div class="input-group-prepend row">
+          <span class="input-group-text hour">04:00 PM</span>
+        </div>
+        <textarea id="comment4pm" value="" type="text" cols="100" rows="2" class="form-control description textarea"></textarea>
+        <div class="input-group-append">
+          <button id="button4pm" class="btn btn-outline-secondary saveBtn" type="button"><i
+              class="far fa-save"></i></button>
+        </div>
+      </div>
+
+      <!-- 5pm-->
+      <div class="input-group mb-3">
+        <div class="input-group-prepend row">
+          <span class="input-group-text hour">05:00 PM</span>
+        </div>
+        <textarea id="comment5pm" value="" type="text" cols="100" rows="2" class="form-control description textarea"></textarea>
+        <div class="input-group-append">
+          <button id="button5pm" class="btn btn-outline-secondary saveBtn" type="button"><i
+              class="far fa-save"></i></button>
+        </div>
+      </div>
+
+      <!--6 pm-->
+      <div class="input-group mb-3">
+        <div class="input-group-prepend row">
+          <span class="input-group-text hour">06:00 PM</span>
+        </div>
+        <textarea id="comment12pm" value="" type="text" cols="100" rows="2" class="form-control description textarea"></textarea>
+        <div class="input-group-append">
+          <button id="button12pm" class="btn btn-outline-secondary saveBtn" type="button"><i
+              class="far fa-save"></i></button>
+        </div>
+      </div>
+
+      <!--7 pm-->
+      <div class="input-group mb-3">
+        <div class="input-group-prepend row">
+          <span class="input-group-text hour">07:00 PM</span>
+        </div>
+        <textarea id="comment12pm" value="" type="text" cols="100" rows="2" class="form-control description textarea"></textarea>
+        <div class="input-group-append">
+          <button id="button12pm" class="btn btn-outline-secondary saveBtn" type="button"><i
+              class="far fa-save"></i></button>
+        </div>
+      </div>
+
+      <!--8 pm-->
+      <div class="input-group mb-3">
+        <div class="input-group-prepend row">
+          <span class="input-group-text hour">08:00 PM</span>
+        </div>
+        <textarea id="comment12pm" value="" type="text" cols="100" rows="2" class="form-control description textarea"></textarea>
+        <div class="input-group-append">
+          <button id="button12pm" class="btn btn-outline-secondary saveBtn" type="button"><i
+              class="far fa-save"></i></button>
+        </div>
+      </div>
+
+      <!--9 pm-->
+      <div class="input-group mb-3">
+        <div class="input-group-prepend row">
+          <span class="input-group-text hour">09:00 PM</span>
+        </div>
+        <textarea id="comment12pm" value="" type="text" cols="100" rows="2" class="form-control description textarea"></textarea>
+        <div class="input-group-append">
+          <button id="button12pm" class="btn btn-outline-secondary saveBtn" type="button"><i
+              class="far fa-save"></i></button>
+        </div>
+      </div>
+
+    </div>
+    <footer><br><br></footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="Assets/script.js"></script>
+</body>
+
+</html>

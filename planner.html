@@ -1,13 +1,24 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
-
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="main.css">
+    <meta charset="utf-8">
     <title>Plan My Chicago Trip</title>
 
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="plannerLayout.css">
+
+    <!-- Use mobile-aware viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <!-- jQuery and JS bundle w/ Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" async>
@@ -18,21 +29,30 @@
 
 <body onload="renderDate()">
     <div class="planner">
-        <div class="topnav">
-            <a href="#" class="active" style="text-align:center;" style=> Plan My Chicago Trip </a>
-            <!-- Navigation links -->
-            <div id="menu">
-                <a href="#" class="home"> Home</a>
-                <a href="#" class="transporation"> Transporation</a>
-                <a href="#" class="savedHotspots"> Saved Hotspots</a>
-                <a href="#" class="myPlanner"> My Planner</a>
+        <!-- navigation bar - https://www.youtube.com/watch?v=DZg6UfS5zYg&t=1812s&ab_channel=TraversyMedia -->
+        <div class="menu-wrap">
+            <input type="checkbox" class="toggler">
+            <div class="hamburger"><div></div></div>
+            <div class="menu">
+                <div>
+                    <div>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="transportation.html">Transportation Information</a></li>
+                            <li><a href="bookmarks.html">Bookmarked Locations</a></li>
+                            <li><a href="planner.html">My Planner</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-
-            <!-- Hamburger menu -->
-            <a href="javascript:void(0)" class="iconMenu" onclick="hamburgerMenu()">
-                <i class="fa fa-bars"></i>
-            </a>
         </div>
+
+        <h1 id="title">Plan My Chicago Trip</h1>
+
+        <form class="example" action="action_page.php">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
 
         <div id="scheduler_here" class="dhx_cal_container dhx_scheduler_week" style="width: 100%; height: 1682px;" role="application">
             <div class="buttonsPlanner" style="width: 980px; height: 59px; left: 0px; top: 0px;">
@@ -87,15 +107,13 @@
             </div>
 
 
-            <!-- Buttons for changing to Month/Week/Day 
+            <!-- Buttons for changing to Month/Week/Day
         <div class="buttonsPlan">
             <button class="toolbar-item" type="button"><a id="buttonDay" href="#" onclick="renderDate()">Day</a></button>
             <button class="toolbar-item" type="button"><a id="buttonWeek" href="#" onclick="renderDate()">Week</a></button>
             <button class="toolbar-item" type="button"><a id="buttonMonth" href="#" onclick="renderDate()">Month</a></button>
 
         </div>-->
-
-
             <!--Calendar showeing the month -->
 
             <div onload="renderDate()" class="plannerMonth">

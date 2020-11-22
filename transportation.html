@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 <html>
 <head>
@@ -8,94 +8,80 @@
     <!-- Load style sheets -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.css">
 
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link rel="stylesheet" href="Transportation_Layout.css">
 
     <!-- Use mobile-aware viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
-<script type="text/javascript">
-/* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
+    <!-- jQuery and JS bundle w/ Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-
-
-
-
-
-</script>
 </head>
 
 <body>
 
 
 
-<div class="NAV">
-	<div class="dropdown">
-  		<button onclick="myFunction()" class="dropbtn">MENU</button>
-  		<div id="myDropdown" class="dropdown-content">
-  			<a href="https://www.chicago.gov/city/en.html">Home</a>
-    		<a href="file:///C:/Users/Administrator/Downloads/transportation.html">Transportation</a>
-    		<a href="https://en.wikipedia.org/wiki/Hotspot_(Wi-Fi)">Saved Hotspots</a>
-    		<a href="https://tasks.office.com/">My Planner</a>
-  		</div>
-  		<b id="TITLE">Plan My Chicago Trip</b>
-  		<div class="search-container">
-    		<form action="https://www.google.com/">
-      			<input type="text" placeholder="Search.." name="search">
-      			<!--<button type="submit"><i class="fa fa-search"></i></button>-->
-      			<button type="submit">Search</button>
-    		</form>
-  		</div>
-	</div>
-</div>
+    <!-- navigation bar - https://www.youtube.com/watch?v=DZg6UfS5zYg&t=1812s&ab_channel=TraversyMedia -->
+    <div class="menu-wrap">
+        <input type="checkbox" class="toggler">
+        <div class="hamburger"><div></div></div>
+        <div class="menu">
+            <div>
+                <div>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="transportation.html">Transportation Information</a></li>
+                        <li><a href="bookmarks.html">Bookmarked Locations</a></li>
+                        <li><a href="planner.html">My Planner</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <form class="example" action="action_page.php">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
 
+    <h1 id="title">Plan My Chicago Trip</h1>
 
-
-<div id="title"> <b>Transportation</b> </div>
     <p><b>Your transportation options are listed below!</b></p>
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/Chicago_Transit_Authority_Logo.svg">
-	<div id="CTA"><p><b>Chicago Transit Authority</b></p></div>
-	<b>Trains:</b>
-	<font color = "blue">Blue-Line</font>
-	,
-	<font color = "red">Red-Line</font>
-	,
-	<font color = "brown">Brown-Line</font>
-	,
-	<font color = "gold">Yellow-Line</font>
-	,
-	<font color = "green">Green-Line</font>
-	,
-	<font color = "orange">Orange-Line</font>
-	,
-	<font color = "pink">Pink-Line</font>
-	,
-	<font color = "purple">Purple-Line</font>
-	<p><b>Buses:</b>
-	<a href = "https://en.wikipedia.org/wiki/List_of_Chicago_Transit_Authority_bus_routes"><font color = "cyan">All Buses Can Be Found Here!</font></a></p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/Chicago_Transit_Authority_Logo.svg">
+    <div id="CTA"><p><b>Chicago Transit Authority</b></p></div>
+    <b>Trains:</b>
+    <font color="blue">Blue-Line</font>
+    ,
+    <font color="red">Red-Line</font>
+    ,
+    <font color="brown">Brown-Line</font>
+    ,
+    <font color="gold">Yellow-Line</font>
+    ,
+    <font color="green">Green-Line</font>
+    ,
+    <font color="orange">Orange-Line</font>
+    ,
+    <font color="pink">Pink-Line</font>
+    ,
+    <font color="purple">Purple-Line</font>
+    <p>
+        <b>Buses:</b>
+        <a href="https://en.wikipedia.org/wiki/List_of_Chicago_Transit_Authority_bus_routes"><font color="cyan">All Buses Can Be Found Here!</font></a>
+    </p>
 
-<img src="http://t1.gstatic.com/images?q=tbn:ANd9GcSMy0KygIfd3WFFlrITlvBedzZqwfdBt5HKwjR_8JW5ZU4pkxYd">
-	<div id="UBER"><p><b>Uber</b></p></div>
-	<b>Rides:</b>
-	<a href = "https://www.uber.com/us/en/ride/"><font color = "cyan">Call An Uber Near You!</font></a></p>
-	
+    <img src="http://t1.gstatic.com/images?q=tbn:ANd9GcSMy0KygIfd3WFFlrITlvBedzZqwfdBt5HKwjR_8JW5ZU4pkxYd">
+    <div id="UBER"><p><b>Uber</b></p></div>
+    <b>Rides:</b>
+    <a href="https://www.uber.com/us/en/ride/"><font color="cyan">Call An Uber Near You!</font></a></p>
+
 </body>
 </html>

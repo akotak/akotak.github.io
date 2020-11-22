@@ -13,6 +13,10 @@
 
 #title {
     font-family: Impact, Charcoal, sans-serif;
+    position: absolute;
+    top: 5px;
+    left: 75px;
+    font-size: 3rem;
 }
 
 #hotspots {
@@ -49,11 +53,6 @@ a.button {
     position: relative;
 }
 
-#title{
-    position: absolute;
-    top: 5px;
-    left: 75px;
-}
 
 #hotspots {
     position: absolute;

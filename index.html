@@ -155,11 +155,37 @@
                             <h5 id="h5">Lincoln Park Zoo</h5>
                             <p>Founded in 1868, Lincoln Park Zoo is among the most established zoos in the country.</p>
                             <a id="icons" href="https://www.google.com/maps?q=lincoln+park+zoo&source=lmns&bih=937&biw=1920&hl=en&sa=X&ved=2ahUKEwjm_ueQ0pTtAhXIi60KHb0WBUUQ_AUoAXoECAEQAQ" class="btn btn-primary"><i class="material-icons">place</i></a>
-                            <a id="icons" href="planner.html" class="btn btn-primary"><i class="fa fa-plus" style="font-size:24px"></i></a>
-                            <form action="bookmarks.html" method="get">
-                                <input type="hidden" name="data" value="Lincoln Park Zoo">
-                                <button id="bookmarkicon" style="font-size:24px" class="btn btn-primary"><i class="fa fa-bookmark-o"></i></button>
-                            </form>
+                            <button id="myBtn" href="planner.html" class="btn btn-primary"><i class="fa fa-plus" style="font-size:24px"></i></button>
+                            <!-- The Modal -->
+                            <div id="myModal" class="modal">
+
+                                <!-- Modal content -->
+                                <div class="modal-content">
+                                    <span class="close">&times;</span>
+                                    <text id="popup">Please enter in time and date:</text>
+                                    <form action="planner.html">
+                                        <label for="date">Date:</label><br>
+                                        <input type="text" id="date" placeholder="MM/DD/YYYY"><br>
+                                        <label for="time">Time:</label><br>
+                                        <input type="text" id="time" placeholder="HH:MM (AM/PM)"<br><br>
+                                        <input type="submit" class="btn btn-primary" value="Add to Planner">
+                                    </form>
+                                </div>
+                            </div>
+                            <button id="myBtn2" href="bookmarks.html" style="font-size:24px" class="btn btn-primary"><i class="fa fa-bookmark-o"></i></button>
+                            <div id="myModal2" class="modal">
+
+                                <!-- Modal content -->
+                                <div class="modal-content">
+                                    <span onclick="document.getElementById('myModal2').style.display='none'"
+                                          class="close">&times;</span>
+                                    <text id="popup">You have bookmarked this page!</text>
+                                    <form action="bookmarks.html" method="get">
+                                        <input type="hidden" name="data" value="Cloud Gate">
+                                        <input type="submit" class="btn btn-primary" value="Go to Bookmarks">
+                                    </form>
+                                </div>
+                            </div>
                             <a id="icons" href="https://www.lpzoo.org/" class="btn btn-primary"><i class="fa fa-external-link" style="font-size:24px"></i></a>
                         </div>
                     </div>

@@ -10,8 +10,9 @@
 
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <link rel="stylesheet" href="Transportation_Layout.css">
+    <link rel="stylesheet" href="bookmarks.css">
 
     <!-- Use mobile-aware viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -21,11 +22,32 @@
     <!-- jQuery and JS bundle w/ Popper.js -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
     <script>
       function getQueryStringValue(key){
         return unescape(window.location.search.replace(new RegExp("^(?:.*[&\\?]" + escape(key).replace(/[\.\+\*]/g, "\\$&") + "(?:\\=([^&]*))?)?.*$", "i"), "$1"));
       }
       </script>
+      <script>
+      function delItem(){
+        var ul = document.getElementById("dynamic-list");
+        var x = getQueryStringValue("data");
+        x = x.replace('+', ' ');
+        var item = document.getElementById(x);
+        ul.removeChild(item);
+        var li = document.createElement("li");
+        x = "List is Empty";
+        li.setAttribute('id', x);
+        li.setAttribute('class', 'list-group-item');
+        li.appendChild(document.createTextNode(x));
+        ul.appendChild(li);
+      }
+      </script>
+      <script>
+        function openPlanner(){
+          location.href="planner.html";
+        }
+        </script>
 
 
 </head>
@@ -67,22 +89,64 @@
     <ul id="dynamic-list" class="list-group">
     </ul>
     <script>
-      var x = getQueryStringValue("data");
-      x = x.replace('+',' ');
-      var ul = document.getElementById("dynamic-list");
-      var li = document.createElement("li");
-      var div = document.createElement("div");
-      var b = document.createElement("button");
-      div.setAttribute('class','input-group-btn');
-      b.setAttribute('type','button');
-      b.setAttribute('class', "btn btn-warning");
-      b.textContent ='X';
-      li.setAttribute('id',x);
-      li.setAttribute('class','list-group-item');
-      li.appendChild(document.createTextNode(x));
-      div.appendChild(b);
-      li.appendChild(div);
-      ul.appendChild(li);
+        var x = getQueryStringValue("data");
+        x = x.replace('+', ' ');
+        var ul = document.getElementById("dynamic-list");
+        var li = document.createElement("li");
+        var f = document.createElement("form");
+        var delB = document.createElement("button");
+        var plannerB = document.createElement("button");
+        var mapB = document.createElement("button");
+        var pageB = document.createElement("button");
+        var pageI = document.createElement("i");
+        var mapI = document.createElement("i");
+        var planI = document.createElement("i");
+        var delI = document.createElement("i");
+        if (x == "") {
+            x = "List is Empty";
+            li.setAttribute('id', x);
+            li.setAttribute('class', 'list-group-item');
+            li.appendChild(document.createTextNode(x));
+            ul.appendChild(li);
+        }
+        else {
+            f.setAttribute('class',"form-inline pull-right vertical-align");
+            f.setAttribute('id', 'formB');
+            delB.setAttribute('type', 'button');
+            delB.setAttribute('id','delButton');
+            delB.setAttribute('class', "btn btn-warning");
+            delB.setAttribute('onClick','delItem()');
+            plannerB.setAttribute('type', 'button');
+            plannerB.setAttribute('id','planButton');
+            plannerB.setAttribute('class', "btn btn-warning");
+            plannerB.setAttribute('onClick','openPlanner()');
+            mapB.setAttribute('type', 'button');
+            mapB.setAttribute('id','mapButton');
+            mapB.setAttribute('class', "btn btn-warning");
+            mapB.setAttribute('onClick','openLocation()');
+            pageB.setAttribute('type', 'button');
+            pageB.setAttribute('id','pageButton');
+            pageB.setAttribute('class', "btn btn-warning");
+            pageB.setAttribute('onClick','openPage()');
+            pageI.setAttribute('class',"fa fa-external-link");
+            mapI.setAttribute('class',"material-icons");
+            planI.setAttribute('class',"fa fa-plus");
+            delI.setAttribute('class',"fa fa-trash");
+            li.setAttribute('id', 'x');
+            li.setAttribute('class', 'list-group-item');
+            li.appendChild(document.createTextNode(x));
+            pageB.appendChild(pageI);
+            f.appendChild(pageB);
+            mapB.appendChild(mapI);
+            f.appendChild(mapB);
+            plannerB.appendChild(planI);
+            f.appendChild(plannerB);
+            delB.appendChild(delI);
+            f.appendChild(delB);
+            li.appendChild(f);
+            ul.appendChild(li);
+        }
+
       //document.getElementById("data").innerHTML = x;
     </script>
 

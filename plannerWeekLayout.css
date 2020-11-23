@@ -260,12 +260,16 @@
     }
     
     .toolbar-item {
-        padding: 0.5em 1.0em;
+        padding: 15px 20px;
         border-radius: 0.8em;
-        box-shadow: #999;
+        box-shadow: rgb(153, 221, 253);
         border: none;
-        background-color: #e2ebe6;
+        background-color: #ffffff;
         justify-content: space-between;
+    }
+    
+    .toolbar-item:hover {
+        background-color: #82cdff;
     }
     /*Style calendar week*/
     
@@ -281,7 +285,7 @@
         display: flex;
         justify-content: space-between;
         width: 78%;
-        padding: 30px 30px;
+        padding: 20px;
         text-align: center;
         background-color: #8ac0da;
         color: #fff;

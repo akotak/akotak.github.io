@@ -1,9 +1,31 @@
-form{
-  margin-bottom: 7px;
+#formB{
+  margin-top: -15px;
 }
+
 #delButton{
-  background-color: #ff0000;
+  /*background-color: #ff0000;*/
+  background-color: #2196F3;
+  color: white;
 }
+
+#planButton{
+  margin-right: 7px;
+  background-color: #2196F3;
+  color: white;
+}
+
+#mapButton{
+  margin-right: 7px;
+  background-color: #2196F3;
+  color: white;
+}
+
+#pageButton{
+  margin-right: 7px;
+  background-color: #2196F3;
+  color: white;
+}
+
 #title {
 	font-family: Impact, Charcoal, sans-serif;
 	position: absolute;

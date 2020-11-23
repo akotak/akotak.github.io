@@ -313,12 +313,12 @@
         position: absolute;
         margin-left: 20px;
         flex-direction: column;
+        z-index: 1;
     }
     
     .addeventatc:hover {
         cursor: pointer;
         background-color: #999;
-        z-index: 1;
     }
     /*Style back page*/
     

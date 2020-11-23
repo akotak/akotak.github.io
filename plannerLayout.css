@@ -269,13 +269,6 @@ ul {
 
 /*Style buttons month/week/day*/
 
-.buttonsPlanner {
-    padding: 1.5em;
-    justify-content: space-between;
-    display: flex;
-    margin: 0.5em;
-}
-
 .toolbar-item {
     padding: 15px 20px;
     border-radius: 0.8em;
@@ -329,6 +322,7 @@ ul {
     position: absolute;
     margin-left: 20px;
     flex-direction: column;
+    z-index: 1;
 }
 
 .addeventatc:hover {
@@ -579,7 +573,7 @@ ul {
     transition: 200ms ease-in-out;
     border: 1px solid black;
     border-radius: 10px;
-    z-index: 3;
+    z-index: 99998;
     background-color: #82cdff;
     width: 500px;
     max-width: 80;

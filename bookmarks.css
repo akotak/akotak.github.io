@@ -1,6 +1,9 @@
 form{
   margin-bottom: 7px;
 }
+#delButton{
+  background-color: #ff0000;
+}
 #title {
 	font-family: Impact, Charcoal, sans-serif;
 	position: absolute;

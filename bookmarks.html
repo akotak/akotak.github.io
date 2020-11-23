@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <link rel="stylesheet" href="Transportation_Layout.css">
+    <link rel="stylesheet" href="bookmarks.css">
 
     <!-- Use mobile-aware viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -24,6 +24,21 @@
     <script>
       function getQueryStringValue(key){
         return unescape(window.location.search.replace(new RegExp("^(?:.*[&\\?]" + escape(key).replace(/[\.\+\*]/g, "\\$&") + "(?:\\=([^&]*))?)?.*$", "i"), "$1"));
+      }
+      </script>
+      <script>
+      function delItem(){
+        var ul = document.getElementById("dynamic-list");
+        var x = getQueryStringValue("data");
+        x = x.replace('+', ' ');
+        var item = document.getElementById(x);
+        ul.removeChild(item);
+        var li = document.createElement("li");
+        x = "List is Empty";
+        li.setAttribute('id', x);
+        li.setAttribute('class', 'list-group-item');
+        li.appendChild(document.createTextNode(x));
+        ul.appendChild(li);
       }
       </script>
 
@@ -83,7 +98,9 @@
         else {
             f.setAttribute('class',"form-inline pull-right vertical-align");
             b.setAttribute('type', 'button');
+            b.setAttribute('id','delButton');
             b.setAttribute('class', "btn btn-warning");
+            b.setAttribute('onClick','delItem()');
             b.textContent = 'X';
             li.setAttribute('id', x);
             li.setAttribute('class', 'list-group-item');

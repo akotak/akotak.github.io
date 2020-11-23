@@ -27,8 +27,8 @@
 
 </head>
 
-<body onload="renderDate()" style="background-color:#225b74ea;">
-    <div class="planner" style="background-color:#c4dce6ea;">
+<body onload="renderDate()">
+    <div class="planner">
         <!-- navigation bar - https://www.youtube.com/watch?v=DZg6UfS5zYg&t=1812s&ab_channel=TraversyMedia -->
         <div class="menu-wrap">
             <input type="checkbox" class="toggler">
@@ -61,7 +61,7 @@
         </div>
 
 
-        <div id="scheduler_here" class="dhx_cal_container dhx_scheduler_week" style="background-color:#d9eef8ea;" role="application">
+        <div id="scheduler_here" class="dhx_cal_container dhx_scheduler_week" style="background-color:#c9dce4ea;" role="application">
 
             <h1 id="title">Plan My Chicago Trip</h1>
 
@@ -71,7 +71,7 @@
             <br>
 
 
-            <!-- div delete add-->
+
             <!-- header buttons -->
             <div class="calendarWeek">
                 <a class="backPage" href="javascript:history.back()">Back to Previous Page</a>
@@ -80,7 +80,6 @@
                     <button class="toolbar-item" type="button"><a id="buttonWeek" href="plannerWeek.html" onclick="weeklyPlan()">Week</a></button>
                     <button class="toolbar-item" type="button"><a id="buttonMonth" href="planner.html" onclick="renderDate()">Month</a></button>
                 </div>
-
                 <br>
                 <br>
             </div>
@@ -130,7 +129,7 @@
                     <span class="location">Location of the event</span>
                 </div>
             </div>
-            <!-- .cd-schedule__timeline -->
+            <!-- calendar week -->
             <div class="calendarW">
                 <div class="daysWeek">Sunday</div>
                 <div class="daysWeek">Monday</div>
@@ -141,9 +140,6 @@
                 <div class="daysWeek">Saturday</div>
             </div>
             <div class="days"></div>
-
-
-
 
             <!-- Plaan week -->
             <div class="container container-fluid time-block">
@@ -306,9 +302,10 @@
                 </div>
 
             </div>
-
+            <br><br><br>
         </div>
     </div>
+
     </div>
     <script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
 

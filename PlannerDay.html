@@ -27,8 +27,8 @@
 
 </head>
 
-<body onload="renderDate()" style="background-color:#225b74ea;">
-    <div class="planner" style="background-color:#3f738aea;">
+<body onload="renderDate()">
+    <div class="planner">
         <!-- navigation bar - https://www.youtube.com/watch?v=DZg6UfS5zYg&t=1812s&ab_channel=TraversyMedia -->
         <div class="menu-wrap">
             <input type="checkbox" class="toggler">
@@ -61,7 +61,7 @@
         </div>
 
 
-        <div id="scheduler_here" class="dhx_cal_container dhx_scheduler_week" style="background-color:#d9eef8ea;" role="application">
+        <div id="scheduler_here" class="dhx_cal_container dhx_scheduler_week" style="background-color:#c9dce4ea;" role="application">
 
             <h1 id="title">Plan My Chicago Trip</h1>
 
@@ -76,11 +76,10 @@
                     <button class="toolbar-item" type="button"><a id="buttonWeek" href="plannerWeek.html" onclick="weeklyPlan()">Week</a></button>
                     <button class="toolbar-item" type="button"><a id="buttonMonth" href="planner.html" onclick="renderDate()">Month</a></button>
                 </div>
-
                 <br>
                 <br>
             </div>
-            <!-- .cd-schedule__timeline -->
+            <!--buttons -->>
             <div class="btns">
                 <!--Opening hours: https://www.youtube.com/watch?v=MBaw_6cPmAw-->
                 <button data-open-target="#openHours" class="btnHours">Opening Hours</button>
@@ -101,7 +100,6 @@
                 </div>
                 <div id="overlay"></div>
 
-                <br><br>
                 <!--Download button:  https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_download_button-->
                 <button data-open-target="#openDown" class="btnDown"><i class="fa fa-download"></i>
             Download
@@ -115,6 +113,7 @@
                     </div>
                     <div id="overlay"></div>
                 </div>
+                <br>
                 <br>
                 <br>
                 <!--Acces to your own calendar -->

@@ -27,8 +27,8 @@
 
 </head>
 
-<body onload="renderDate()" style="background-color:#225b74ea;">
-    <div class="planner" style="background-color:#c4dce6ea;">
+<body onload="renderDate()">
+    <div class="planner">
         <!-- navigation bar - https://www.youtube.com/watch?v=DZg6UfS5zYg&t=1812s&ab_channel=TraversyMedia -->
         <div class="menu-wrap">
             <input type="checkbox" class="toggler">
@@ -61,7 +61,7 @@
         </div>
 
 
-        <div id="scheduler_here" class="dhx_cal_container dhx_scheduler_week" style="background-color:#d9eef8ea;" role="application">
+        <div id="scheduler_here" class="dhx_cal_container dhx_scheduler_week" style="background-color:#c9dce4ea;" role="application">
 
             <h1 id="title">Plan My Chicago Trip</h1>
 
@@ -96,15 +96,10 @@
                     <div class="hours-body">
                         404 Page not found!
                         <br>
-                        <br>
-
-                        <br><br>
+                        <br> <br><br>
                     </div>
-
                 </div>
                 <div id="overlay"></div>
-
-                <br><br>
                 <!--Download button:  https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_download_button-->
                 <button data-open-target="#openDown" class="btnDown"><i class="fa fa-download"></i>
                 Download
@@ -130,14 +125,10 @@
                     <span class="description">Description of the event</span>
                     <span class="location">Location of the event</span>
                 </div>
+                <br><br><br>
             </div>
 
-            <!--
-                    Calendar month -->
-
-
-
-            <!-- .cd-schedule__timeline -->
+            <!-- Calendar month -->
             <div class="calendar">
                 <div class="month">
                     <div class="prev" onclick="moveDate('prev')">
@@ -161,8 +152,9 @@
                     <div>Sat</div>
                 </div>
                 <div class="days"></div>
+                <br><br>
             </div>
-            <!--</div> .cd-schedule -->
+            <br><br>
         </div>
     </div>
     </div>

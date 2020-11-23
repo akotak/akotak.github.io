@@ -400,13 +400,7 @@
         cursor: pointer;
         background-color: #999;
     }
-    /*Style back page*/
     
-    .backPage {
-        font-weight: bold;
-        padding-left: 30px;
-        font-size: 20px;
-    }
     /*style butn hours*/
     
     .btnHours {

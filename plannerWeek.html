@@ -25,12 +25,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 
-    <script>
-      function getQueryStringValue(key){
-        return unescape(window.location.search.replace(new RegExp("^(?:.*[&\\?]" + escape(key).replace(/[\.\+\*]/g, "\\$&") + "(?:\\=([^&]*))?)?.*$", "i"), "$1"));
-      }
-      </script>
-
 </head>
 
 <body onload="renderDate()">
@@ -69,7 +63,7 @@
 
         <div id="scheduler_here" class="dhx_cal_container dhx_scheduler_week" style="background-color:#c9dce4ea;" role="application">
 
-            <h1 id="title">Plan My Chicago Trip</h1>
+            <h1 id="title">Plan My Chicago Trip - Planner</h1>
 
             <br>
             <br>
@@ -80,7 +74,7 @@
 
             <!-- header buttons -->
             <div class="calendarWeek">
-                <a class="backPage" href="javascript:history.back()">Back to Previous Page</a>
+                <a class="backPage" href="javascript:history.back()"><b>Back to Previous Page</b></a>
                 <div class="btn1">
                     <button class="toolbar-item" type="button"><a id="buttonDay" href="PlannerDay.html" onclick="renderDate()">Day</a></button>
                     <button class="toolbar-item" type="button"><a id="buttonWeek" href="plannerWeek.html" onclick="weeklyPlan()">Week</a></button>
@@ -161,12 +155,6 @@
                 class="far fa-save"></i></button>
                     </div>
                 </div>
-                <script>
-                var x = getQueryStringValue("input");
-                x = x.replace(/\+/g, ' ');
-                var t = document.getElementById('comment9am');
-                t.value = x;
-                </script>
 
 
                 <!-- 10 am-->

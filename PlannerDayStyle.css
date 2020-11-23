@@ -27,7 +27,12 @@
     padding-bottom: 10px;
 }
 
+.input-group {
+    height: 20%;
+}
+
 .row {
+    height: 2px;
     white-space: pre-wrap;
     border-top: 1px solid white;
 }
@@ -36,7 +41,7 @@
     background-color: #ffffff;
     color: #000000;
     font-weight: bold;
-    height: 79px;
+    height: 59px;
 }
 
 .past {
@@ -65,8 +70,10 @@
 
 .mb-3,
 .my-3 {
-    margin-bottom: 0rem!important;
-    height: 79px;
+    width: 40%;
+    margin-left: 70px;
+    /*margin-bottom: 0rem!important;
+    */
 }
 
 
@@ -331,7 +338,7 @@ form.example::after {
 
 body {
     color: #0288d1;
-    background-color: #a5d1e6ea;
+    background-color: #c4dce6ea;
 }
 
 * {
@@ -386,11 +393,11 @@ ul {
 
 .calendarW {
     margin-top: 50px;
-    margin-left: 155px;
+    margin-left: 250px;
     align-items: center;
     display: flex;
     justify-content: space-between;
-    width: 78%;
+    width: 50%;
     padding: 5px;
     text-align: center;
     background-color: #8ac0da;
@@ -423,6 +430,7 @@ ul {
     position: absolute;
     margin-left: 20px;
     flex-direction: column;
+    z-index: 1;
 }
 
 .addeventatc:hover {
@@ -458,13 +466,6 @@ ul {
 
 
 /* Style month */
-
-.plannerMonth {
-    background-color: #c4dce6ea;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-}
 
 .calendar {
     margin: auto;
@@ -546,61 +547,6 @@ ul {
 #month {
     font-size: 30px;
     font-weight: 500;
-}
-
-
-/*
-.week {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  padding-top: 50px;
-  padding-top: var(--schedule-rows-height)
-  display: none;
-  padding-top: 30px;
-  position: relative;
-  color: #881440;
-  justify-content: left;
-
-}
-*/
-
-.cal_tab {
-    width: 88px;
-    height: 29px;
-    background-color: none;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 500;
-    padding-top: 1px;
-    border-radius: 0;
-    justify-content: space-between;
-    cursor: pointer;
-    border: 1px solid #0288d1;
-    color: #0288d1;
-    font-size: inherit;
-}
-
-.buttonsPlanner {
-    border: none;
-    margin-top: 20px;
-    margin-left: 80px;
-    display: block;
-    height: 20px;
-    position: absolute;
-    z-index: 7;
-    width: 750px;
-    color: rgba(0, 0, 0, .75);
-}
-
-.monday {
-    /* day label*/
-    width: 100%;
-    padding: 0 var(--component-padding);
 }
 
 

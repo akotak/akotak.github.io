@@ -27,12 +27,11 @@
       function getQueryStringValue(key){
         return unescape(window.location.search.replace(new RegExp("^(?:.*[&\\?]" + escape(key).replace(/[\.\+\*]/g, "\\$&") + "(?:\\=([^&]*))?)?.*$", "i"), "$1"));
       }
-      </script>
-      <script>
+
       function delItem(){
         var ul = document.getElementById("dynamic-list");
         var x = getQueryStringValue("data");
-        x = x.replace('+', ' ');
+        x = x.replace(/\+/g, ' ');
         var item = document.getElementById(x);
         ul.removeChild(item);
         var li = document.createElement("li");
@@ -42,11 +41,79 @@
         li.appendChild(document.createTextNode(x));
         ul.appendChild(li);
       }
-      </script>
-      <script>
+
         function openPlanner(){
           location.href="planner.html";
         }
+
+        function openLocation(){
+          var x = getQueryStringValue("data");
+          x = x.replace(/\+/g, ' ');
+          if (x == "Cloud Gate"){
+            location.href="https://www.google.com/maps/search/the+bean/@42.0442788,-88.2106239,10z/data=!3m1!4b1";
+          }
+          if (x == "Lincoln Park Zoo"){
+            location.href="https://www.google.com/maps?q=lincoln+park+zoo&source=lmns&bih=937&biw=1920&hl=en&sa=X&ved=2ahUKEwjm_ueQ0pTtAhXIi60KHb0WBUUQ_AUoAXoECAEQAQ";
+          }
+          if (x == "Navy Pier"){
+            location.href="https://www.google.com/maps?q=navy+pier&biw=1920&bih=937&um=1&ie=UTF-8&sa=X&ved=0ahUKEwjGyp7E0pTtAhUNSTABHXyGBfQQ_AUIESgD";
+          }
+          if (x == "Shedd Aquarium"){
+            location.href="https://www.google.com/maps?q=shedd+aquarium&um=1&ie=UTF-8&sa=X&ved=2ahUKEwjzwo3h05TtAhWPQjABHfTRCHcQ_AUoBHoECEAQBg";
+          }
+          if (x == "Willis Tower"){
+            location.href="https://www.google.com/maps?q=willis+tower&um=1&ie=UTF-8&sa=X&ved=2ahUKEwiy0Kag05TtAhU1szEKHSMwAV0Q_AUoA3oECEIQBQ";
+          }
+          if (x == "Art Institute of Chicago"){
+            location.href="https://www.google.com/maps?q=art+institute+of+chicago&biw=1920&bih=937&um=1&ie=UTF-8&sa=X&ved=0ahUKEwjkov-A15TtAhWiwFkKHfn9DesQ_AUIECgC";
+          }
+          if (x == "Buckingham Fountain"){
+            location.href="https://www.google.com/maps?q=Buckingham+Fountain&source=lmns&bih=937&biw=1920&hl=en&sa=X&ved=2ahUKEwiA-fiv15TtAhUKfqwKHV5eBM8Q_AUoA3oECAEQAw";
+          }
+          if (x == "The Chicago Theatre"){
+            location.href="https://www.google.com/maps?q=The+Chicago+Theatre&source=lmns&bih=937&biw=1920&hl=en&sa=X&ved=2ahUKEwi0oeia2JTtAhVRSKwKHQcMDBkQ_AUoAXoECAEQAQ";
+          }
+          if (x == "Brookfield Zoo"){
+            location.href="https://www.google.com/maps?q=Brookfield+Zoo&um=1&ie=UTF-8&sa=X&ved=2ahUKEwj8w8rT2JTtAhXFRDABHSlsAu4Q_AUoAXoECDsQAw";
+          }
+          if (x == "Frank Lloyd Wright Home and Studio"){
+            location.href="https://www.google.com/maps?q=Frank+Lloyd+Wright+Home+and+Studio&source=lmns&bih=937&biw=1920&hl=en&sa=X&ved=2ahUKEwjdmv-h2ZTtAhUhja0KHVtzC34Q_AUoAnoECAEQAg";
+          }
+        }
+          function openPage(){
+            var x = getQueryStringValue("data");
+            x = x.replace(/\+/g, ' ');
+            if (x == "Cloud Gate"){
+              location.href="https://www.chicago.gov/city/en/depts/dca/supp_info/chicago_s_publicartcloudgateinmillenniumpark.html";
+            }
+            if (x == "Lincoln Park Zoo"){
+              location.href="https://www.lpzoo.org/";
+            }
+            if (x == "Navy Pier"){
+              location.href="https://navypier.org/";
+            }
+            if (x == "Shedd Aquarium"){
+              location.href="https://www.chicago.gov/city/en/depts/dca/supp_info/chicago_s_publicartcloudgateinmillenniumpark.html";
+            }
+            if (x == "Willis Tower"){
+              location.href="https://theskydeck.com/";
+            }
+            if (x == "Art Institute of Chicago"){
+              location.href="https://www.artic.edu/";
+            }
+            if (x == "Buckingham Fountain"){
+              location.href="https://www.chicagoparkdistrict.com/parks-facilities/clarence-f-buckingham-memorial-fountain";
+            }
+            if (x == "The Chicago Theatre"){
+              location.href="https://www.msg.com/the-chicago-theatre";
+            }
+            if (x == "Brookfield Zoo"){
+              location.href="https://www.czs.org/Brookfield-ZOO/Home";
+            }
+            if (x == "Frank Lloyd Wright Home and Studio"){
+              location.href="https://flwright.org/visit/homeandstudio";
+            }
+          }
         </script>
 
 
@@ -90,7 +157,7 @@
     </ul>
     <script>
         var x = getQueryStringValue("data");
-        x = x.replace('+', ' ');
+        x = x.replace(/\+/g, ' ');
         var ul = document.getElementById("dynamic-list");
         var li = document.createElement("li");
         var f = document.createElement("form");
@@ -127,12 +194,12 @@
             pageB.setAttribute('type', 'button');
             pageB.setAttribute('id','pageButton');
             pageB.setAttribute('class', "btn btn-warning");
-            pageB.setAttribute('onClick','openPage()');
-            pageI.setAttribute('class',"fa fa-external-link");
-            mapI.setAttribute('class',"material-icons");
-            planI.setAttribute('class',"fa fa-plus");
+            pageB.setAttribute('onClick', 'openPage()');
+            planI.setAttribute('class', "fa fa-plus");
+            mapI.setAttribute('class', "fa fa-map-marker");
+            pageI.setAttribute('class', "fa fa-external-link");
             delI.setAttribute('class',"fa fa-trash");
-            li.setAttribute('id', 'x');
+            li.setAttribute('id', x);
             li.setAttribute('class', 'list-group-item');
             li.appendChild(document.createTextNode(x));
             pageB.appendChild(pageI);

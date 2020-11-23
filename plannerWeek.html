@@ -72,7 +72,7 @@
 
 
             <!-- div delete add-->
-
+            <!-- header buttons -->
             <div class="calendarWeek">
                 <a class="backPage" href="javascript:history.back()">Back to Previous Page</a>
                 <div class="btn1">
@@ -83,6 +83,54 @@
 
                 <br>
                 <br>
+            </div>
+
+            <div class="btns">
+                <!--Opening hours: https://www.youtube.com/watch?v=MBaw_6cPmAw-->
+                <button data-open-target="#openHours" class="btnHours">Opening Hours</button>
+                <div class="openHours" id="openHours">
+                    <div class="hoursContent" id="hoursContent">
+                        <div class="titleHours">
+                            Opening Hours
+                        </div>
+                        <button data-close-target class="close-btnHours">&times;</button>
+                    </div>
+                    <div class="hours-body">
+                        404 Page not found!
+                        <br>
+                        <br>
+
+                        <br><br>
+                    </div>
+                </div>
+                <div id="overlay"></div>
+
+                <br><br>
+                <!--Download button:  https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_download_button-->
+                <button data-open-target="#openDown" class="btnDown"><i class="fa fa-download"></i>
+                Download
+                </button>
+                <div class="openDown" id="openDown">
+                    <div class="downContent" id="downContent">
+                        <div class="titleDown">
+                            Thank you!
+                        </div>
+                        <button data-close-target class="close-btnDown">&times;</button>
+                    </div>
+                    <div id="overlay"></div>
+                </div>
+                <br>
+                <br>
+                <!--Acces to your own calendar -->
+                <div title="Add to Calendar" class="addeventatc" id="addeventatc1" aria-haspopup="true" aria-expanded="false" tabindex="0" translate="no" data-loaded="true" style="visibility: visible; z-index: 1;">
+                    Personal calendar
+                    <span class="start">12/05/2020 08:00 AM</span>
+                    <span class="end">12/05/2020 10:00 AM</span>
+                    <span class="timezone">America/Chicago</span>
+                    <span class="title">Summary of the event</span>
+                    <span class="description">Description of the event</span>
+                    <span class="location">Location of the event</span>
+                </div>
             </div>
             <!-- .cd-schedule__timeline -->
             <div class="calendarW">
@@ -261,111 +309,7 @@
 
             </div>
 
-            <!---->
-            <div class="btns">
-                <!--Opening hours: https://www.youtube.com/watch?v=MBaw_6cPmAw-->
-                <button data-open-target="#openHours" class="btnHours">Opening Hours</button>
-                <div class="openHours" id="openHours">
-                    <div class="hoursContent" id="hoursContent">
-                        <div class="titleHours">
-                            Opening Hours
-                        </div>
-                        <button data-close-target class="close-btnHours">&times;</button>
-                    </div>
-                    <div class="hours-body">
-                        404 Page not found!
-                        <br>
-                        <br>
-
-                        <br><br>
-                    </div>
-                </div>
-                <div id="overlay"></div>
-
-                <br><br>
-                <!--Download button:  https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_download_button-->
-                <button data-open-target="#openDown" class="btnDown"><i class="fa fa-download"></i>
-                Download
-                </button>
-                <div class="openDown" id="openDown">
-                    <div class="downContent" id="downContent">
-                        <div class="titleDown">
-                            Thank you!
-                        </div>
-                        <button data-close-target class="close-btnDown">&times;</button>
-                    </div>
-                    <div id="overlay"></div>
-                </div>
-                <br>
-                <br>
-                <!--Acces to your own calendar -->
-                <div title="Add to Calendar" class="addeventatc">
-                    Personal calendar
-                    <span class="start">12/05/2020 08:00 AM</span>
-                    <span class="end">12/05/2020 10:00 AM</span>
-                    <span class="timezone">America/Chicago</span>
-                    <span class="title">Summary of the event</span>
-                    <span class="description">Description of the event</span>
-                    <span class="location">Location of the event</span>
-                </div>
-            </div>
-            <div class="timeline">
-                <ul>
-                    <li><span>09:00 ------------------------------</span></li>
-                    <li><span>09:30 ------------------------------</span></li>
-                    <li><span>10:00</span></li>
-                    <li><span>10:30</span></li>
-                    <li><span>11:00</span></li>
-                    <li><span>11:30</span></li>
-                    <li><span>12:00</span></li>
-                    <li><span>12:30</span></li>
-                    <li><span>13:00</span></li>
-                    <li><span>13:30</span></li>
-                    <li><span>14:00</span></li>
-                    <li><span>14:30</span></li>
-                    <li><span>15:00</span></li>
-                    <li><span>15:30</span></li>
-                    <li><span>16:00</span></li>
-                    <li><span>16:30</span></li>
-                    <li><span>17:00</span></li>
-                    <li><span>17:30</span></li>
-                    <li><span>18:00</span></li>
-                </ul>
-            </div>
-
         </div>
-        <!--</div> .cd-schedule -->
-
-        <!--
-                    Calendar month
-                
-        <div onload="renderDate()" class="plannerMonth">
-            <div class="calendar">
-                <div class="month">
-                    <div class="prev" onclick="moveDate('prev')">
-                        <span>&#10094;</span>
-                    </div>
-                    <div>
-                        <h2 id="month"></h2>
-                        <p id="date_str"></p>
-                    </div>
-                    <div class="next" onclick="moveDate('next')">
-                        <span>&#10095;</span>
-                    </div>
-                </div>
-                <div class="weekdays">
-                    <div>Sun</div>
-                    <div>Mon</div>
-                    <div>Tue</div>
-                    <div>Wed</div>
-                    <div>Thu</div>
-                    <div>Fri</div>
-                    <div>Sat</div>
-                </div>
-                <div class="days">
-                </div>
-            </div>
-        </div>-->
     </div>
     </div>
     <script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>

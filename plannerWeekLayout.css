@@ -280,11 +280,11 @@
     
     .calendarW {
         margin-top: 50px;
-        margin-left: 155px;
+        margin-left: 355px;
         align-items: center;
         display: flex;
         justify-content: space-between;
-        width: 78%;
+        width: 58%;
         padding: 20px;
         text-align: center;
         background-color: #8ac0da;

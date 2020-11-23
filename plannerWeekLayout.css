@@ -256,11 +256,14 @@
     .btn1 {
         text-align: center;
         margin-top: 30px;
-        margin-left: 300px;
+        margin-left: 380px;
     }
     
     .toolbar-item {
-        padding: 15px 20px;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 10px 35px;
+        margin: 10px;
         border-radius: 0.8em;
         box-shadow: rgb(153, 221, 253);
         border: none;
@@ -323,6 +326,7 @@
     /*Style back page*/
     
     .backPage {
+        font-size: 20px;
         font-weight: bold;
         padding-left: 30px;
     }
@@ -570,6 +574,7 @@
         cursor: pointer;
         color: white;
         font-weight: bold;
+        justify-content: space-between;
     }
     /* dowload button*/
     
@@ -578,7 +583,8 @@
         border: none;
         color: white;
         font-weight: bold;
-        margin-top: 10px;
+        margin-top: 4px;
+        margin-left: 200px;
         padding: 12px 20px;
         cursor: pointer;
         font-size: 15px;

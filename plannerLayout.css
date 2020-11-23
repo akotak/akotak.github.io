@@ -317,6 +317,7 @@ ul {
 /*Style btns*/
 
 .btns {
+    z-index: 1;
     margin-left: 50px;
 }
 

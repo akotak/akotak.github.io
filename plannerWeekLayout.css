@@ -317,7 +317,6 @@
         position: absolute;
         margin-left: 20px;
         flex-direction: column;
-        z-index: 1;
     }
     
     .addeventatc:hover {
@@ -450,7 +449,7 @@
         transition: 200ms ease-in-out;
         border: 1px solid black;
         border-radius: 10px;
-        z-index: 1;
+        z-index: 3;
         background-color: #82cdff;
         width: 500px;
         max-width: 80;
@@ -472,6 +471,7 @@
         text-align: center;
         font-size: 1.25rem;
         font-weight: bold;
+
     }
     
     .hoursContent .close-btnHours {
@@ -495,6 +495,7 @@
         bottom: 0;
         background-color: rgba(0, 0, 0, .5);
         pointer-events: none;
+        z-index: 2;
     }
     
     #overlay.active {
@@ -583,3 +584,7 @@
         outline: none;
         background: none;
     }
+
+.textarea{
+    z-index: 1;
+}

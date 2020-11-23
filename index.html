@@ -40,7 +40,7 @@
                         <li><a href="index.html">Home</a></li>
                         <li><a href="transportation.html">Transportation Information</a></li>
                         <li><a href="bookmarks.html">Bookmarked Locations</a></li>
-                        <li><a href="planner.html">My Planner</a></li>
+                        <li><a href="plannerWeek.html">My Planner</a></li>
                     </ul>
                 </div>
             </div>
@@ -244,7 +244,7 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
-            <a id="newplan" href="planner.html" class="btn btn-primary">Create a New Plan</a>
+            <button id="newplan" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal21">Create a New Plan</button>
 
             <!-- Modal -->
             <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -486,7 +486,7 @@
                             </button>
                         </div>
                         <div class="modal-body">
-                            <form id="plan1" action="planner.html" method="get">
+                            <form id="plan1" action="plannerWeek.html" method="get">
                                 <label for="date">Please enter a date:</label><br>
                                 <input type="text" id="date" placeholder="MM/DD/YYYY"><br>
                                 <label for="time">Please enter a time:</label><br>
@@ -507,7 +507,7 @@
                             </button>
                         </div>
                         <div class="modal-body">
-                            <form id="plan1" action="planner.html" method="get">
+                            <form id="plan1" action="plannerWeek.html" method="get">
                                 <label for="date">Please enter a date:</label><br>
                                 <input type="text" id="date" placeholder="MM/DD/YYYY"><br>
                                 <label for="time">Please enter a time:</label><br>
@@ -528,7 +528,7 @@
                             </button>
                         </div>
                         <div class="modal-body">
-                            <form id="plan1" action="planner.html" method="get">
+                            <form id="plan1" action="plannerWeek.html" method="get">
                                 <label for="date">Please enter a date:</label><br>
                                 <input type="text" id="date" placeholder="MM/DD/YYYY"><br>
                                 <label for="time">Please enter a time:</label><br>
@@ -549,7 +549,7 @@
                             </button>
                         </div>
                         <div class="modal-body">
-                            <form id="plan1" action="planner.html" method="get">
+                            <form id="plan1" action="plannerWeek.html" method="get">
                                 <label for="date">Please enter a date:</label><br>
                                 <input type="text" id="date" placeholder="MM/DD/YYYY"><br>
                                 <label for="time">Please enter a time:</label><br>
@@ -570,7 +570,7 @@
                             </button>
                         </div>
                         <div class="modal-body">
-                            <form id="plan1" action="planner.html" method="get">
+                            <form id="plan1" action="plannerWeek.html" method="get">
                                 <label for="date">Please enter a date:</label><br>
                                 <input type="text" id="date" placeholder="MM/DD/YYYY"><br>
                                 <label for="time">Please enter a time:</label><br>
@@ -591,7 +591,7 @@
                             </button>
                         </div>
                         <div class="modal-body">
-                            <form id="plan1" action="planner.html" method="get">
+                            <form id="plan1" action="plannerWeek.html" method="get">
                                 <label for="date">Please enter a date:</label><br>
                                 <input type="text" id="date" placeholder="MM/DD/YYYY"><br>
                                 <label for="time">Please enter a time:</label><br>
@@ -612,7 +612,7 @@
                             </button>
                         </div>
                         <div class="modal-body">
-                            <form id="plan1" action="planner.html" method="get">
+                            <form id="plan1" action="plannerWeek.html" method="get">
                                 <label for="date">Please enter a date:</label><br>
                                 <input type="text" id="date" placeholder="MM/DD/YYYY"><br>
                                 <label for="time">Please enter a time:</label><br>
@@ -633,7 +633,7 @@
                             </button>
                         </div>
                         <div class="modal-body">
-                            <form id="plan1" action="planner.html" method="get">
+                            <form id="plan1" action="plannerWeek.html" method="get">
                                 <label for="date">Please enter a date:</label><br>
                                 <input type="text" id="date" placeholder="MM/DD/YYYY"><br>
                                 <label for="time">Please enter a time:</label><br>
@@ -654,7 +654,7 @@
                             </button>
                         </div>
                         <div class="modal-body">
-                            <form id="plan1" action="planner.html" method="get">
+                            <form id="plan1" action="plannerWeek.html" method="get">
                                 <label for="date">Please enter a date:</label><br>
                                 <input type="text" id="date" placeholder="MM/DD/YYYY"><br>
                                 <label for="time">Please enter a time:</label><br>
@@ -675,7 +675,7 @@
                             </button>
                         </div>
                         <div class="modal-body">
-                            <form id="plan1" action="planner.html" method="get">
+                            <form id="plan1" action="plannerWeek.html" method="get">
                                 <label for="date">Please enter a date:</label><br>
                                 <input type="text" id="date" placeholder="MM/DD/YYYY"><br>
                                 <label for="time">Please enter a time:</label><br>
@@ -686,7 +686,26 @@
                     </div>
                 </div>
             </div>
-    </header>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal21" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 class="modal-title" id="exampleModalLabel">Create a new plan?</h3>
+                            <button id="closebtn" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-footer">
+                            <button id="closebtn" type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+                            <form action="plannerWeek.html" method="get">
+                                <button class="btn btn-primary">Yes</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</header>
 
 
 </body>

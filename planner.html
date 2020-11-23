@@ -27,7 +27,7 @@
 
 </head>
 
-<body onload="renderDate()" style="background-color:#c4dce6ea;">
+<body onload="renderDate()" style="background-color:#225b74ea;">
     <div class="planner" style="background-color:#c4dce6ea;">
         <!-- navigation bar - https://www.youtube.com/watch?v=DZg6UfS5zYg&t=1812s&ab_channel=TraversyMedia -->
         <div class="menu-wrap">
@@ -55,30 +55,37 @@
             <button type="submit"><i class="fa fa-search"></i></button>
         </form>
 
-        <div id="scheduler_here" class="dhx_cal_container dhx_scheduler_week" style="background-color:#c4dce6ea;" role="application">
 
+        <div style="top:30px; bottom: 24px;">
+            <div id="calendarWeek" style="height:50%; width: 50%"></div>
+        </div>
+
+
+        <div id="scheduler_here" class="dhx_cal_container dhx_scheduler_week" style="background-color:#d9eef8ea;" role="application">
 
             <h1 id="title">Plan My Chicago Trip</h1>
 
             <br>
             <br>
-            <br><br>
-            <div class="buttonsPlanner" style="width: 980px; height: 59px; left: 0px; top: 0px;">
-                <br>
-                <br>
-                <a href="javascript:history.back()">Back to Previous Page</a>
+            <br>
+            <br>
 
-                <br><br>
-                <button class="toolbar-item" type="button"><a id="buttonDay" href="PlannerDay.html" onclick="renderDate()">Day</a></button>
-                <button class="toolbar-item" type="button"><a id="buttonWeek" href="plannerWeek.html" onclick="renderDate()">Week</a></button>
-                <button class="toolbar-item" type="button"><a id="buttonMonth" href="planner.html" onclick="renderDate()">Month</a></button>
+
+            <!-- div delete add-->
+            <!-- header buttons -->
+            <div class="calendarWeek">
+                <a class="backPage" href="javascript:history.back()">Back to Previous Page</a>
+                <div class="btn1">
+                    <button class="toolbar-item" type="button"><a id="buttonDay" href="PlannerDay.html" onclick="renderDate()">Day</a></button>
+                    <button class="toolbar-item" type="button"><a id="buttonWeek" href="plannerWeek.html" onclick="weeklyPlan()">Week</a></button>
+                    <button class="toolbar-item" type="button"><a id="buttonMonth" href="planner.html" onclick="renderDate()">Month</a></button>
+                </div>
+
                 <br>
                 <br>
-                <br><br><br><br>
-                <br>
-                <br>
-                <br>
-                <br>
+            </div>
+
+            <div class="btns">
                 <!--Opening hours: https://www.youtube.com/watch?v=MBaw_6cPmAw-->
                 <button data-open-target="#openHours" class="btnHours">Opening Hours</button>
                 <div class="openHours" id="openHours">
@@ -97,13 +104,12 @@
                     </div>
                 </div>
                 <div id="overlay"></div>
-                <br>
+
                 <br><br>
                 <!--Download button:  https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_download_button-->
-                <button data-open-target="#openDown" class="btnDown">
-                        <i class="fa fa-download"></i>
-                        Download
-                    </button>
+                <button data-open-target="#openDown" class="btnDown"><i class="fa fa-download"></i>
+                Download
+                </button>
                 <div class="openDown" id="openDown">
                     <div class="downContent" id="downContent">
                         <div class="titleDown">
@@ -125,43 +131,47 @@
                     <span class="description">Description of the event</span>
                     <span class="location">Location of the event</span>
                 </div>
-                <!--
-                    Calendar month
-                -->
             </div>
-            <div onload="renderDate()" class="plannerMonth">
-                <div class="calendar">
-                    <div class="month">
-                        <div class="prev" onclick="moveDate('prev')">
-                            <span>&#10094;</span>
-                        </div>
-                        <div>
-                            <h2 id="month"></h2>
-                            <p id="date_str"></p>
-                        </div>
-                        <div class="next" onclick="moveDate('next')">
-                            <span>&#10095;</span>
-                        </div>
+
+            <!--
+                    Calendar month -->
+
+
+
+            <!-- .cd-schedule__timeline -->
+            <div class="calendar">
+                <div class="month">
+                    <div class="prev" onclick="moveDate('prev')">
+                        <span>&#10094;</span>
                     </div>
-                    <div class="weekdays">
-                        <div>Sun</div>
-                        <div>Mon</div>
-                        <div>Tue</div>
-                        <div>Wed</div>
-                        <div>Thu</div>
-                        <div>Fri</div>
-                        <div>Sat</div>
+                    <div>
+                        <h2 id="month"></h2>
+                        <p id="date_str"></p>
                     </div>
-                    <div class="days">
+                    <div class="next" onclick="moveDate('next')">
+                        <span>&#10095;</span>
                     </div>
                 </div>
+                <div class="weekdays">
+                    <div>Sun</div>
+                    <div>Mon</div>
+                    <div>Tue</div>
+                    <div>Wed</div>
+                    <div>Thu</div>
+                    <div>Fri</div>
+                    <div>Sat</div>
+                </div>
+                <div class="days"></div>
             </div>
+            <!--</div> .cd-schedule -->
         </div>
+    </div>
     </div>
     <script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
 
     <!--<button name="jump" onclick="jump()">Go</button>-->
     <script src="script.js"></script>
+
 
     <!-- Optional JavaScript for bootstrap -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

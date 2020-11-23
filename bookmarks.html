@@ -71,7 +71,7 @@
         x = x.replace('+', ' ');
         var ul = document.getElementById("dynamic-list");
         var li = document.createElement("li");
-        var div = document.createElement("div");
+        var f = document.createElement("form");
         var b = document.createElement("button");
         if (x == "") {
             x = "List is Empty";
@@ -81,18 +81,18 @@
             ul.appendChild(li);
         }
         else {
-            div.setAttribute('class', 'input-group-btn');
+            f.setAttribute('class',"form-inline pull-right vertical-align");
             b.setAttribute('type', 'button');
             b.setAttribute('class', "btn btn-warning");
             b.textContent = 'X';
             li.setAttribute('id', x);
             li.setAttribute('class', 'list-group-item');
             li.appendChild(document.createTextNode(x));
-            div.appendChild(b);
-            li.appendChild(div);
+            f.appendChild(b);
+            li.appendChild(f);
             ul.appendChild(li);
         }
-     
+
       //document.getElementById("data").innerHTML = x;
     </script>
 

@@ -31,7 +31,7 @@
       function delItem(){
         var ul = document.getElementById("dynamic-list");
         var x = getQueryStringValue("data");
-        x = x.replace('+', ' ');
+        x = x.replace(/\+/g, ' ');
         var item = document.getElementById(x);
         ul.removeChild(item);
         var li = document.createElement("li");
@@ -48,7 +48,7 @@
 
         function openLocation(){
           var x = getQueryStringValue("data");
-          x = x.replace('+', ' ');
+          x = x.replace(/\+/g, ' ');
           if (x == "Cloud Gate"){
             location.href="https://www.google.com/maps/search/the+bean/@42.0442788,-88.2106239,10z/data=!3m1!4b1";
           }
@@ -82,7 +82,7 @@
         }
           function openPage(){
             var x = getQueryStringValue("data");
-            x = x.replace('+', ' ');
+            x = x.replace(/\+/g, ' ');
             if (x == "Cloud Gate"){
               location.href="https://www.chicago.gov/city/en/depts/dca/supp_info/chicago_s_publicartcloudgateinmillenniumpark.html";
             }
@@ -157,7 +157,7 @@
     </ul>
     <script>
         var x = getQueryStringValue("data");
-        x = x.replace('+', ' ');
+        x = x.replace(/\+/g, ' ');
         var ul = document.getElementById("dynamic-list");
         var li = document.createElement("li");
         var f = document.createElement("form");
@@ -195,7 +195,7 @@
             pageB.setAttribute('id','pageButton');
             pageB.setAttribute('class', "btn btn-warning");
             pageB.setAttribute('onClick', 'openPage()');
-            planI.setAttribute('class', "fa fa-plus"); 
+            planI.setAttribute('class', "fa fa-plus");
             mapI.setAttribute('class', "fa fa-map-marker");
             pageI.setAttribute('class', "fa fa-external-link");
             delI.setAttribute('class',"fa fa-trash");

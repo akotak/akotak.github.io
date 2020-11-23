@@ -318,6 +318,7 @@
     .addeventatc:hover {
         cursor: pointer;
         background-color: #999;
+        z-index: 1;
     }
     /*Style back page*/
     

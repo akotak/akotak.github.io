@@ -217,10 +217,9 @@ form.example {
 }
 body {
 
-	background-image: url("https://images.unsplash.com/photo-1524168272322-bf73616d9cb5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
-	background-repeat: no-repeat;
-	background-size: cover;
-
+}
+.backbtn {
+	margin-left: 30px;
 }
 /* Style the search field */
 form.example input[type=text] {

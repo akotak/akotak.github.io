@@ -442,6 +442,7 @@ ul {
 /*Style back page*/
 
 .backPage {
+    font-weight: bold;
     padding-left: 30px;
 }
 
@@ -633,6 +634,7 @@ ul {
 /* dowload button*/
 
 .btnDown {
+    margin-left: 30px;
     background-color: rgb(0, 158, 241);
     border: none;
     color: white;
@@ -650,6 +652,7 @@ ul {
 }
 
 .openDown {
+    visibility: hidden;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -657,7 +660,7 @@ ul {
     transition: 200ms ease-in-out;
     border: 1px solid black;
     border-radius: 10px;
-    z-index: 3;
+    z-index: 1;
     background-color: #82cdff;
     width: 500px;
     max-width: 80;
@@ -1114,6 +1117,7 @@ ul {
     position: absolute;
     margin-left: 20px;
     flex-direction: column;
+    z-index: 1;
 }
 
 .addeventatc:hover {

@@ -1,7 +1,6 @@
 ﻿<!DOCTYPE html>
 
 <html>
-
 <head>
     <meta charset="utf-8">
     <title>Plan My Chicago Trip</title>
@@ -25,8 +24,7 @@
     <!-- jQuery and JS bundle w/ Popper.js -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
+
 </head>
 
 <body>
@@ -34,9 +32,7 @@
     <!-- navigation bar - https://www.youtube.com/watch?v=DZg6UfS5zYg&t=1812s&ab_channel=TraversyMedia -->
     <div class="menu-wrap">
         <input type="checkbox" class="toggler">
-        <div class="hamburger">
-            <div></div>
-        </div>
+        <div class="hamburger"><div></div></div>
         <div class="menu">
             <div>
                 <div>
@@ -83,83 +79,14 @@
                             <h5 id="h5">Cloud Gate</h5>
                             <p>Popular public sculpture that is the centerpiece of Millennium Park at Chicago.</p>
                             <a id="icons" href="https://www.google.com/maps/search/the+bean/@42.0442788,-88.2106239,10z/data=!3m1!4b1" class="btn btn-primary"><i class="material-icons">place</i></a>
-                            <button id="myBtn" href="planner.html" class="btn btn-primary"><i class="fa fa-plus" style="font-size:24px"></i></button>
-<<<<<<< HEAD
-                            <!-- The Modal -->
-                            <div id="myModal" class="modal">
-
-                                <!-- Modal content -->
-                                <div class="modal-content">
-                                    <span class="close">&times;</span>
-                                    <text id="popup">Please enter in time and date:</text>
-                                    <form action="planner.html">
-                                        <label for="date">Date:</label><br>
-                                        <input type="text" id="date" placeholder="MM/DD/YYYY"><br>
-                                        <label for="time">Time:</label><br>
-                                        <input type="text" id="time" placeholder="HH:MM (AM/PM)"><br><br>
-                                        <input type="submit" class="btn btn-primary" value="Add to Planner">
-                                    </form>
-
-                                </div>
-                            </div>
-                            <button id="myBtn2" href="bookmarks.html" style="font-size:24px" class="btn btn-primary"><i class="fa fa-bookmark-o"></i></button>
-                            <div id="myModal2" class="modal">
-
-                                <!-- Modal content -->
-                                <div class="modal-content">
-                                    <span onclick="document.getElementById('myModal2').style.display='none'" class="close">&times;</span>
-                                    <text id="popup">You have bookmarked this page!</text>
-                                    <form action="bookmarks.html" method="get">
-                                        <input type="hidden" name="data" value="Cloud Gate">
-                                        <input type="submit" class="btn btn-primary" value="Go to Bookmarks">
-                                    </form>
-                                </div>
-                            </div>
-                            <a id="icons" href="https://www.chicago.gov/city/en/depts/dca/supp_info/chicago_s_publicartcloudgateinmillenniumpark.html" class="btn btn-primary"><i class="fa fa-external-link" style="font-size:24px"></i></a>
-                        </div>
-                        <script>
-                            // Get the modal
-                            var modal = document.getElementById("myModal");
-                            var modal2 = document.getElementById("myModal2");
-
-                            // Get the button that opens the modal
-                            var btn = document.getElementById("myBtn");
-                            var btn2 = document.getElementById("myBtn2");
-
-                            // Get the <span> element that closes the modal
-                            var span = document.getElementsByClassName("close")[0];
-                            // When the user clicks the button, open the modal
-                            btn.onclick = function() {
-                                modal.style.display = "block";
-                            }
-                            btn2.onclick = function() {
-                                modal2.style.display = "block";
-                            }
-
-                            // When the user clicks on <span> (x), close the modal
-                            span.onclick = function() {
-                                modal.style.display = "none";
-                            }
-
-                            // When the user clicks anywhere outside of the modal, close it
-                            window.onclick = function(event) {
-                                if (event.target == modal) {
-                                    modal.style.display = "none";
-                                }
-                                if (event.target == modal2) {
-                                    modal2.style.display = "none";
-                                }
-                            }
-
-                            //when the user set up the data, will close it
-                        </script>
-=======
-                            <button id="myBtn1" type="button" class="btn btn-primary" style="font-size:24px" data-toggle="modal" data-target="#exampleModal">
+                            <button id="myBtn" href="planner.html" style="font-size:24px" type="button" class="btn btn-primary" style="font-size:24px" data-toggle="modal" data-target="#exampleModal11">
+                                <i class="fa fa-plus"></i>
+                            </button>
+                            <button id="myBtn" type="button" class="btn btn-primary" style="font-size:24px" data-toggle="modal" data-target="#exampleModal">
                                 <i class="fa fa-bookmark-o"></i>
                             </button>
                             <a id="icons" href="https://www.chicago.gov/city/en/depts/dca/supp_info/chicago_s_publicartcloudgateinmillenniumpark.html" class="btn btn-primary"><i class="fa fa-external-link" style="font-size:24px"></i></a>
                         </div>
->>>>>>> c22d2cb62804395c12b7998ad1bab1460d56b4e5
                     </div>
                     <!-- lincoln park zoo -->
                     <div class="carousel-item">
@@ -169,43 +96,12 @@
                             <h5 id="h5">Lincoln Park Zoo</h5>
                             <p>Founded in 1868, Lincoln Park Zoo is among the most established zoos in the country.</p>
                             <a id="icons" href="https://www.google.com/maps?q=lincoln+park+zoo&source=lmns&bih=937&biw=1920&hl=en&sa=X&ved=2ahUKEwjm_ueQ0pTtAhXIi60KHb0WBUUQ_AUoAXoECAEQAQ" class="btn btn-primary"><i class="material-icons">place</i></a>
-<<<<<<< HEAD
-                            <button id="myBtn" href="planner.html" class="btn btn-primary"><i class="fa fa-plus" style="font-size:24px"></i></button>
-                            <!-- The Modal -->
-                            <div id="myModal" class="modal">
-
-                                <!-- Modal content -->
-                                <div class="modal-content">
-                                    <span class="close">&times;</span>
-                                    <text id="popup">Please enter in time and date:</text>
-                                    <form action="planner.html">
-                                        <label for="date">Date:</label><br>
-                                        <input type="text" id="date" placeholder="MM/DD/YYYY"><br>
-                                        <label for="time">Time:</label><br>
-                                        <input type="text" id="time" placeholder="HH:MM (AM/PM)"><br><br>
-                                        <input type="submit" class="btn btn-primary" value="Add to Planner">
-                                    </form>
-                                </div>
-                            </div>
-                            <button id="myBtn2" href="bookmarks.html" style="font-size:24px" class="btn btn-primary"><i class="fa fa-bookmark-o"></i></button>
-                            <div id="myModal2" class="modal">
-
-                                <!-- Modal content -->
-                                <div class="modal-content">
-                                    <span onclick="document.getElementById('myModal2').style.display='none'" class="close">&times;</span>
-                                    <text id="popup">You have bookmarked this page!</text>
-                                    <form action="bookmarks.html" method="get">
-                                        <input type="hidden" name="data" value="Cloud Gate">
-                                        <input type="submit" class="btn btn-primary" value="Go to Bookmarks">
-                                    </form>
-                                </div>
-                            </div>
-=======
-                            <a id="icons" href="planner.html" class="btn btn-primary"><i class="fa fa-plus" style="font-size:24px"></i></a>
+                            <button id="myBtn" href="planner.html" style="font-size:24px" type="button" class="btn btn-primary" style="font-size:24px" data-toggle="modal" data-target="#exampleModal12">
+                                <i class="fa fa-plus"></i>
+                            </button>
                             <button id="myBtn" type="button" class="btn btn-primary" style="font-size:24px" data-toggle="modal" data-target="#exampleModal2">
                                 <i class="fa fa-bookmark-o"></i>
                             </button>
->>>>>>> c22d2cb62804395c12b7998ad1bab1460d56b4e5
                             <a id="icons" href="https://www.lpzoo.org/" class="btn btn-primary"><i class="fa fa-external-link" style="font-size:24px"></i></a>
                         </div>
                     </div>
@@ -216,7 +112,9 @@
                             <h5 id="h5">Navy Pier</h5>
                             <p>Navy Pier is a 3,300-foot-long pier on the shoreline of Lake Michigan.</p>
                             <a id="icons" href="https://www.google.com/maps?q=navy+pier&biw=1920&bih=937&um=1&ie=UTF-8&sa=X&ved=0ahUKEwjGyp7E0pTtAhUNSTABHXyGBfQQ_AUIESgD" class="btn btn-primary"><i class="material-icons">place</i></a>
-                            <a id="icons" href="planner.html" class="btn btn-primary"><i class="fa fa-plus" style="font-size:24px"></i></a>
+                            <button id="myBtn" href="planner.html" style="font-size:24px" type="button" class="btn btn-primary" style="font-size:24px" data-toggle="modal" data-target="#exampleModal13">
+                                <i class="fa fa-plus"></i>
+                            </button>
                             <button id="myBtn" type="button" class="btn btn-primary" style="font-size:24px" data-toggle="modal" data-target="#exampleModal3">
                                 <i class="fa fa-bookmark-o"></i>
                             </button>
@@ -230,7 +128,9 @@
                             <h5 id="h5">Shedd Aquarium</h5>
                             <p>Look nature in the eye and discover the wonder of the aquatic animal world at Shedd Aquarium.</p>
                             <a id="icons" href="https://www.google.com/maps?q=shedd+aquarium&um=1&ie=UTF-8&sa=X&ved=2ahUKEwjzwo3h05TtAhWPQjABHfTRCHcQ_AUoBHoECEAQBg" class="btn btn-primary"><i class="material-icons">place</i></a>
-                            <a id="icons" href="planner.html" class="btn btn-primary"><i class="fa fa-plus" style="font-size:24px"></i></a>
+                            <button id="myBtn" href="planner.html" style="font-size:24px" type="button" class="btn btn-primary" style="font-size:24px" data-toggle="modal" data-target="#exampleModal14">
+                                <i class="fa fa-plus"></i>
+                            </button>
                             <button id="myBtn" type="button" class="btn btn-primary" style="font-size:24px" data-toggle="modal" data-target="#exampleModal4">
                                 <i class="fa fa-bookmark-o"></i>
                             </button>
@@ -244,7 +144,9 @@
                             <h5 id="h5">Willis Tower</h5>
                             <p>Step outside the tallest building in the Western Hemisphere.</p>
                             <a id="icons" href="https://www.google.com/maps?q=willis+tower&um=1&ie=UTF-8&sa=X&ved=2ahUKEwiy0Kag05TtAhU1szEKHSMwAV0Q_AUoA3oECEIQBQ" class="btn btn-primary"><i class="material-icons">place</i></a>
-                            <a id="icons" href="planner.html" class="btn btn-primary"><i class="fa fa-plus" style="font-size:24px"></i></a>
+                            <button id="myBtn" href="planner.html" style="font-size:24px" type="button" class="btn btn-primary" style="font-size:24px" data-toggle="modal" data-target="#exampleModal15">
+                                <i class="fa fa-plus"></i>
+                            </button>
                             <button id="myBtn" type="button" class="btn btn-primary" style="font-size:24px" data-toggle="modal" data-target="#exampleModal5">
                                 <i class="fa fa-bookmark-o"></i>
                             </button>
@@ -258,7 +160,9 @@
                             <h5 id="h5">Art Institute of Chicago</h5>
                             <p>One of the oldest and largest art museums in the United States.</p>
                             <a id="icons" href="https://www.google.com/maps?q=art+institute+of+chicago&biw=1920&bih=937&um=1&ie=UTF-8&sa=X&ved=0ahUKEwjkov-A15TtAhWiwFkKHfn9DesQ_AUIECgC" class="btn btn-primary"><i class="material-icons">place</i></a>
-                            <a id="icons" href="planner.html" class="btn btn-primary"><i class="fa fa-plus" style="font-size:24px"></i></a>
+                            <button id="myBtn" href="planner.html" style="font-size:24px" type="button" class="btn btn-primary" style="font-size:24px" data-toggle="modal" data-target="#exampleModal16">
+                                <i class="fa fa-plus"></i>
+                            </button>
                             <button id="myBtn" type="button" class="btn btn-primary" style="font-size:24px" data-toggle="modal" data-target="#exampleModal6">
                                 <i class="fa fa-bookmark-o"></i>
                             </button>
@@ -272,7 +176,9 @@
                             <h5 id="h5">Buckingham Fountain</h5>
                             <p>Chicago Landmark in the center of Grant Park.</p>
                             <a id="icons" href="https://www.google.com/maps?q=Buckingham+Fountain&source=lmns&bih=937&biw=1920&hl=en&sa=X&ved=2ahUKEwiA-fiv15TtAhUKfqwKHV5eBM8Q_AUoA3oECAEQAw" class="btn btn-primary"><i class="material-icons">place</i></a>
-                            <a id="icons" href="planner.html" class="btn btn-primary"><i class="fa fa-plus" style="font-size:24px"></i></a>
+                            <button id="myBtn" href="planner.html" style="font-size:24px" type="button" class="btn btn-primary" style="font-size:24px" data-toggle="modal" data-target="#exampleModal17">
+                                <i class="fa fa-plus"></i>
+                            </button>
                             <button id="myBtn" type="button" class="btn btn-primary" style="font-size:24px" data-toggle="modal" data-target="#exampleModal7">
                                 <i class="fa fa-bookmark-o"></i>
                             </button>
@@ -286,7 +192,9 @@
                             <h5 id="h5">The Chicago Theatre</h5>
                             <p>Legendary venue in the heart of the Windy City.</p>
                             <a id="icons" href="https://www.google.com/maps?q=The+Chicago+Theatre&source=lmns&bih=937&biw=1920&hl=en&sa=X&ved=2ahUKEwi0oeia2JTtAhVRSKwKHQcMDBkQ_AUoAXoECAEQAQ" class="btn btn-primary"><i class="material-icons">place</i></a>
-                            <a id="icons" href="planner.html" class="btn btn-primary"><i class="fa fa-plus" style="font-size:24px"></i></a>
+                            <button id="myBtn" href="planner.html" style="font-size:24px" type="button" class="btn btn-primary" style="font-size:24px" data-toggle="modal" data-target="#exampleModal18">
+                                <i class="fa fa-plus"></i>
+                            </button>
                             <button id="myBtn" type="button" class="btn btn-primary" style="font-size:24px" data-toggle="modal" data-target="#exampleModal8">
                                 <i class="fa fa-bookmark-o"></i>
                             </button>
@@ -300,7 +208,9 @@
                             <h5 id="h5">Brookfield Zoo</h5>
                             <p>Also known as the Chicago Zoological Park, is a zoo located in the Chicago suburb of Brookfield.</p>
                             <a id="icons" href="https://www.google.com/maps?q=Brookfield+Zoo&um=1&ie=UTF-8&sa=X&ved=2ahUKEwj8w8rT2JTtAhXFRDABHSlsAu4Q_AUoAXoECDsQAw" class="btn btn-primary"><i class="material-icons">place</i></a>
-                            <a id="icons" href="planner.html" class="btn btn-primary"><i class="fa fa-plus" style="font-size:24px"></i></a>
+                            <button id="myBtn" href="planner.html" style="font-size:24px" type="button" class="btn btn-primary" style="font-size:24px" data-toggle="modal" data-target="#exampleModal19">
+                                <i class="fa fa-plus"></i>
+                            </button>
                             <button id="myBtn" type="button" class="btn btn-primary" style="font-size:24px" data-toggle="modal" data-target="#exampleModal9">
                                 <i class="fa fa-bookmark-o"></i>
                             </button>
@@ -314,7 +224,9 @@
                             <h5 id="h5">Frank Lloyd Wright Home and Studio</h5>
                             <p>Historic house and studio designed and owned by architect Frank Lloyd Wright.</p>
                             <a id="icons" href="https://www.google.com/maps?q=Frank+Lloyd+Wright+Home+and+Studio&source=lmns&bih=937&biw=1920&hl=en&sa=X&ved=2ahUKEwjdmv-h2ZTtAhUhja0KHVtzC34Q_AUoAnoECAEQAg" class="btn btn-primary"><i class="material-icons">place</i></a>
-                            <a id="icons" href="planner.html" class="btn btn-primary"><i class="fa fa-plus" style="font-size:24px"></i></a>
+                            <button id="myBtn" href="planner.html" style="font-size:24px" type="button" class="btn btn-primary" style="font-size:24px" data-toggle="modal" data-target="#exampleModal20">
+                                <i class="fa fa-plus"></i>
+                            </button>
                             <button id="myBtn" type="button" class="btn btn-primary" style="font-size:24px" data-toggle="modal" data-target="#exampleModal10">
                                 <i class="fa fa-bookmark-o"></i>
                             </button>
@@ -339,19 +251,19 @@
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h3 class="modal-title" id="exampleModalLabel">Modal title</h3>
+                            <h3 class="modal-title" id="exampleModalLabel">Cloud Gate Added!</h3>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
                         <div class="modal-body">
-                            something
+                            You can view this in your bookmarks.
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button id="closebtn" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                             <form action="bookmarks.html" method="get">
                                 <input type="hidden" name="data" value="Cloud Gate">
-                                <button style="font-size:24px" class="btn btn-primary">Go to Bookmarks</button>
+                                <button class="btn btn-primary">Go to Bookmarks</button>
                             </form>
                         </div>
                     </div>
@@ -362,19 +274,19 @@
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <h3 class="modal-title" id="exampleModalLabel">Lincoln Park Added!</h3>
+                            <button id="closebtn" type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
                         <div class="modal-body">
-                            ...
+                            You can view this in your bookmarks.
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button id="closebtn" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                             <form action="bookmarks.html" method="get">
                                 <input type="hidden" name="data" value="Lincoln Park Zoo">
-                                <button style="font-size:24px" class="btn btn-primary">Go to Bookmarks</button>
+                                <button class="btn btn-primary">Go to Bookmarks</button>
                             </form>
                         </div>
                     </div>
@@ -385,19 +297,19 @@
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <h3 class="modal-title" id="exampleModalLabel">Navy Pier Added!</h3>
+                            <button id="closebtn" type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
                         <div class="modal-body">
-                            ...
+                            You can view this in your bookmarks.
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button id="closebtn" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                             <form action="bookmarks.html" method="get">
                                 <input type="hidden" name="data" value="Navy Pier">
-                                <button style="font-size:24px" class="btn btn-primary">Go to Bookmarks</button>
+                                <button class="btn btn-primary">Go to Bookmarks</button>
                             </form>
                         </div>
                     </div>
@@ -408,19 +320,19 @@
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <h3 class="modal-title" id="exampleModalLabel">Shedd Aquarium Added!</h3>
+                            <button id="closebtn" type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
                         <div class="modal-body">
-                            ...
+                            You can view this in your bookmarks.
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button id="closebtn" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                             <form action="bookmarks.html" method="get">
                                 <input type="hidden" name="data" value="Shedd Aquarium">
-                                <button style="font-size:24px" class="btn btn-primary">Go to Bookmarks</button>
+                                <button class="btn btn-primary">Go to Bookmarks</button>
                             </form>
                         </div>
                     </div>
@@ -431,19 +343,19 @@
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <h3 class="modal-title" id="exampleModalLabel">Willis Tower Added!</h3>
+                            <button id="closebtn" type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
                         <div class="modal-body">
-                            ...
+                            You can view this in your bookmarks.
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button id="closebtn" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                             <form action="bookmarks.html" method="get">
                                 <input type="hidden" name="data" value="Willis Tower">
-                                <button style="font-size:24px" class="btn btn-primary">Go to Bookmarks</button>
+                                <button class="btn btn-primary">Go to Bookmarks</button>
                             </form>
                         </div>
                     </div>
@@ -454,19 +366,19 @@
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <h3 class="modal-title" id="exampleModalLabel">Art Institute Added!</h3>
+                            <button id="closebtn" type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
                         <div class="modal-body">
-                            ...
+                            You can view this in your bookmarks.
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button id="closebtn" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                             <form action="bookmarks.html" method="get">
                                 <input type="hidden" name="data" value="Art Institute of Chicago">
-                                <button style="font-size:24px" class="btn btn-primary">Go to Bookmarks</button>
+                                <button class="btn btn-primary">Go to Bookmarks</button>
                             </form>
                         </div>
                     </div>
@@ -477,19 +389,19 @@
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <h3 class="modal-title" id="exampleModalLabel">Buckingham Fountain Added!</h3>
+                            <button id="closebtn" type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
                         <div class="modal-body">
-                            ...
+                            You can view this in your bookmarks.
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button id="closebtn" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                             <form action="bookmarks.html" method="get">
                                 <input type="hidden" name="data" value="Buckingham Fountain">
-                                <button style="font-size:24px" class="btn btn-primary">Go to Bookmarks</button>
+                                <button class="btn btn-primary">Go to Bookmarks</button>
                             </form>
                         </div>
                     </div>
@@ -500,19 +412,19 @@
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <h3 class="modal-title" id="exampleModalLabel">Chicago Theatre Added!</h3>
+                            <button id="closebtn" type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
                         <div class="modal-body">
-                            ...
+                            You can view this in your bookmarks.
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button id="closebtn" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                             <form action="bookmarks.html" method="get">
                                 <input type="hidden" name="data" value="The Chicago Theatre">
-                                <button style="font-size:24px" class="btn btn-primary">Go to Bookmarks</button>
+                                <button class="btn btn-primary">Go to Bookmarks</button>
                             </form>
                         </div>
                     </div>
@@ -523,19 +435,19 @@
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <h3 class="modal-title" id="exampleModalLabel">Brookfield Zoo Added!</h3>
+                            <button id="closebtn" type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
                         <div class="modal-body">
-                            ...
+                            You can view this in your bookmarks.
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button id="closebtn" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                             <form action="bookmarks.html" method="get">
                                 <input type="hidden" name="data" value="Brookfield Zoo">
-                                <button style="font-size:24px" class="btn btn-primary">Go to Bookmarks</button>
+                                <button class="btn btn-primary">Go to Bookmarks</button>
                             </form>
                         </div>
                     </div>
@@ -546,25 +458,235 @@
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <h3 class="modal-title" id="exampleModalLabel">Frank Lloyd Wright Home and Studio Added!</h3>
+                            <button id="closebtn" type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
                         <div class="modal-body">
-                            ...
+                            You can view this in your bookmarks.
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button id="closebtn" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                             <form action="bookmarks.html" method="get">
                                 <input type="hidden" name="data" value="Frank Lloyd Wright Home and Studio">
-                                <button style="font-size:24px" class="btn btn-primary">Go to Bookmarks</button>
+                                <button class="btn btn-primary">Go to Bookmarks</button>
                             </form>
                         </div>
                     </div>
                 </div>
             </div>
-</header>
+            <div class="modal fade" id="exampleModal11" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 class="modal-title" id="exampleModalLabel">Add Cloud Gate to Planner?</h3>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form id="plan1" action="planner.html" method="get">
+                                <label for="date">Please enter a date:</label><br>
+                                <input type="text" id="date" placeholder="MM/DD/YYYY"><br>
+                                <label for="time">Please enter a time:</label><br>
+                                <input type="text" id="time" placeholder="HH:MM (AM/PM)"<br><br>
+                                <input type="submit" class="btn btn-primary" value="Add to Planner">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="exampleModal12" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 class="modal-title" id="exampleModalLabel">Add Lincoln Zoo to Planner?</h3>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form id="plan1" action="planner.html" method="get">
+                                <label for="date">Please enter a date:</label><br>
+                                <input type="text" id="date" placeholder="MM/DD/YYYY"><br>
+                                <label for="time">Please enter a time:</label><br>
+                                <input type="text" id="time" placeholder="HH:MM (AM/PM)"<br><br>
+                                <input type="submit" class="btn btn-primary" value="Add to Planner">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="exampleModal13" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 class="modal-title" id="exampleModalLabel">Add Navy Pier to Planner?</h3>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form id="plan1" action="planner.html" method="get">
+                                <label for="date">Please enter a date:</label><br>
+                                <input type="text" id="date" placeholder="MM/DD/YYYY"><br>
+                                <label for="time">Please enter a time:</label><br>
+                                <input type="text" id="time" placeholder="HH:MM (AM/PM)"<br><br>
+                                <input type="submit" class="btn btn-primary" value="Add to Planner">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="exampleModal14" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 class="modal-title" id="exampleModalLabel">Add Shedd Aquarium to Planner?</h3>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form id="plan1" action="planner.html" method="get">
+                                <label for="date">Please enter a date:</label><br>
+                                <input type="text" id="date" placeholder="MM/DD/YYYY"><br>
+                                <label for="time">Please enter a time:</label><br>
+                                <input type="text" id="time" placeholder="HH:MM (AM/PM)"<br><br>
+                                <input type="submit" class="btn btn-primary" value="Add to Planner">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="exampleModal15" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 class="modal-title" id="exampleModalLabel">Add Willis Tower to Planner?</h3>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form id="plan1" action="planner.html" method="get">
+                                <label for="date">Please enter a date:</label><br>
+                                <input type="text" id="date" placeholder="MM/DD/YYYY"><br>
+                                <label for="time">Please enter a time:</label><br>
+                                <input type="text" id="time" placeholder="HH:MM (AM/PM)"<br><br>
+                                <input type="submit" class="btn btn-primary" value="Add to Planner">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="exampleModal16" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 class="modal-title" id="exampleModalLabel">Add Art Institute to Planner?</h3>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form id="plan1" action="planner.html" method="get">
+                                <label for="date">Please enter a date:</label><br>
+                                <input type="text" id="date" placeholder="MM/DD/YYYY"><br>
+                                <label for="time">Please enter a time:</label><br>
+                                <input type="text" id="time" placeholder="HH:MM (AM/PM)"<br><br>
+                                <input type="submit" class="btn btn-primary" value="Add to Planner">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="exampleModal17" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 class="modal-title" id="exampleModalLabel">Add Buckingham Fountain to Planner?</h3>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form id="plan1" action="planner.html" method="get">
+                                <label for="date">Please enter a date:</label><br>
+                                <input type="text" id="date" placeholder="MM/DD/YYYY"><br>
+                                <label for="time">Please enter a time:</label><br>
+                                <input type="text" id="time" placeholder="HH:MM (AM/PM)"<br><br>
+                                <input type="submit" class="btn btn-primary" value="Add to Planner">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="exampleModal18" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 class="modal-title" id="exampleModalLabel">Add Chicago Theatre to Planner?</h3>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form id="plan1" action="planner.html" method="get">
+                                <label for="date">Please enter a date:</label><br>
+                                <input type="text" id="date" placeholder="MM/DD/YYYY"><br>
+                                <label for="time">Please enter a time:</label><br>
+                                <input type="text" id="time" placeholder="HH:MM (AM/PM)"<br><br>
+                                <input type="submit" class="btn btn-primary" value="Add to Planner">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="exampleModal19" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 class="modal-title" id="exampleModalLabel">Add Brookfield Zoo to Planner?</h3>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form id="plan1" action="planner.html" method="get">
+                                <label for="date">Please enter a date:</label><br>
+                                <input type="text" id="date" placeholder="MM/DD/YYYY"><br>
+                                <label for="time">Please enter a time:</label><br>
+                                <input type="text" id="time" placeholder="HH:MM (AM/PM)"<br><br>
+                                <input type="submit" class="btn btn-primary" value="Add to Planner">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="exampleModal20" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 class="modal-title" id="exampleModalLabel">Add FLW Home and Studio to Planner?</h3>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form id="plan1" action="planner.html" method="get">
+                                <label for="date">Please enter a date:</label><br>
+                                <input type="text" id="date" placeholder="MM/DD/YYYY"><br>
+                                <label for="time">Please enter a time:</label><br>
+                                <input type="text" id="time" placeholder="HH:MM (AM/PM)"<br><br>
+                                <input type="submit" class="btn btn-primary" value="Add to Planner">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </header>
 
 
 </body>

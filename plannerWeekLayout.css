@@ -546,6 +546,11 @@
         opacity: 1;
         pointer-events: all;
     }
+    /* buttons hours and download*/
+    
+    .btns {
+        margin-left: 50px;
+    }
     /* style open  button wait /hours */
     
     .btnHours {

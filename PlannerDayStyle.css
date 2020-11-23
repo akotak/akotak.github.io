@@ -1122,6 +1122,13 @@ ul {
 }
 
 
+/*Style btns*/
+
+.btns {
+    margin-left: 50px;
+}
+
+
 /*Style back page*/
 
 .backPage {
@@ -1431,5 +1438,4 @@ ul {
     border: none;
     outline: none;
     background: none;
-    >>>>>>>c22d2cb62804395c12b7998ad1bab1460d56b4e5
 }

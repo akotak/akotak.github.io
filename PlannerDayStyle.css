@@ -8,6 +8,8 @@
         border-bottom: 1px;
         padding: 0;
         border-radius: 0;
+        z-index: 1;
+        
     }
     
     .jumbotron {
@@ -58,20 +60,13 @@
         background-color: #77dd77;
         color: white;
     }
-    
-    .saveBtn {
-        border-left: 1px solid black;
-        border-top-right-radius: 15px;
-        border-bottom-right-radius: 15px;
-        background-color: #06AED5;
-        color: white;
-        padding: 20px 40px;
-    }
+
     
     .mb-3,
     .my-3 {
         width: 40%;
         margin-left: 70px;
+        z-index: 1;
         /*margin-bottom: 0rem!important;
     */
     }
@@ -88,8 +83,13 @@
         padding: 0;
         box-sizing: border-box;
     }
-    /*Style navigation menu*/
+     /*title places*/
     
+     .titlePlaces {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
     #title {
         font-family: Impact, Charcoal, sans-serif;
         position: absolute;
@@ -360,12 +360,12 @@
     
     .calendarW {
         margin-top: 50px;
-        margin-left: 300px;
+        margin-left: 355px;
         align-items: center;
         display: flex;
         justify-content: space-between;
-        width: 50%;
-        padding: 5px;
+        width: 58%;
+        padding: 20px;
         text-align: center;
         background-color: #8ac0da;
         color: #fff;
@@ -382,24 +382,27 @@
     /*Style timeline*/
     
     .timeline {
+
         padding-left: 250px;
         display: flex;
     }
     /*style calendar */
     
     #addeventatc {
+        visibility: hidden;
         border: none;
         background-color: #0a2333;
         position: absolute;
         margin-left: 20px;
         flex-direction: column;
-        z-index: 1;
+        
     }
     
     .addeventatc:hover {
         cursor: pointer;
         background-color: #999;
     }
+    
     /*style butn hours*/
     
     .btnHours {
@@ -419,12 +422,29 @@
         background-color: #206d91ea;
     }
     /* Style month */
+    .plannerMonth {
+        background-color: #c4dce6ea;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+    }
     
     .calendar {
-        margin-left: auto;
-        width: 30%;
+        margin: auto;
+        width: 600px;
         background-color: #fff;
         box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.2);
+    }
+    
+    .month {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 40px 30px;
+        text-align: center;
+        background-color: #8ac0da;
+        color: #fff;
     }
     
     .day {
@@ -437,7 +457,6 @@
         background-color: #8ac0da;
         color: #fff;
     }
-    
     .weekdays {
         background-color: #6caee4ea;
         color: #fff;
@@ -501,6 +520,13 @@
         font-size: 30px;
         font-weight: 500;
     }
+
+    .monday {
+        /* day label*/
+        width: 100%;
+        padding: 0 var(--component-padding);
+    }
+
     /*Style Opening hours*/
     
     .openHours {
@@ -511,10 +537,11 @@
         transition: 200ms ease-in-out;
         border: 1px solid black;
         border-radius: 10px;
-        z-index: 2;
+        z-index: 3;
         background-color: #82cdff;
         width: 500px;
         max-width: 80;
+
     }
     
     .openHours.active {
@@ -556,6 +583,7 @@
         bottom: 0;
         background-color: rgba(0, 0, 0, .5);
         pointer-events: none;
+        z-index: 2;
     }
     
     #overlay.active {
@@ -585,12 +613,6 @@
         font-weight: bold;
         justify-content: space-between;
     }
-    /*title places*/
-    
-    .titlePlaces {
-        font-size: 20px;
-        font-weight: bold;
-    }
     /* dowload button*/
     
     .btnDown {
@@ -612,7 +634,7 @@
     }
     
     .openDown {
-        visibility: hidden;
+        
         position: fixed;
         top: 50%;
         left: 50%;
@@ -620,7 +642,7 @@
         transition: 200ms ease-in-out;
         border: 1px solid black;
         border-radius: 10px;
-        z-index: 1;
+        z-index: 3;
         background-color: #82cdff;
         width: 500px;
         max-width: 80;

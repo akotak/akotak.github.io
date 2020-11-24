@@ -176,7 +176,7 @@
     justify-content: center;
     transform: scale(0);
     transition: all 0.4s ease;
-    z-index: 99;
+    z-index: 5;
 }
 
 .menu-wrap .menu>div>div {
@@ -467,17 +467,6 @@ ul {
     font-weight: 500;
 }
 
-.buttonsPlanner {
-    margin-top: 20px;
-    margin-left: 80px;
-    display: block;
-    height: 20px;
-    position: absolute;
-    width: 750px;
-    color: rgba(0, 0, 0, .75);
-    z-index: 1;
-}
-
 .monday {
     /* day label*/
     width: 100%;
@@ -495,7 +484,7 @@ ul {
     transition: 200ms ease-in-out;
     border: 1px solid black;
     border-radius: 10px;
-    z-index: 1;
+    z-index: 3;
     background-color: #82cdff;
     width: 500px;
     max-width: 80;
@@ -540,6 +529,7 @@ ul {
     bottom: 0;
     background-color: rgba(0, 0, 0, .5);
     pointer-events: none;
+    z-index: 2;
 }
 
 #overlay.active {
@@ -595,6 +585,7 @@ ul {
     border: 1px solid black;
     border-radius: 10px;
     z-index: 99998;
+    z-index: 3;
     background-color: #82cdff;
     width: 500px;
     max-width: 80;
@@ -623,4 +614,8 @@ ul {
     border: none;
     outline: none;
     background: none;
+}
+
+.textarea {
+    z-index: 1;
 }

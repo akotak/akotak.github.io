@@ -349,6 +349,14 @@ ul {
 }
 
 
+/*style places hours*/
+
+.titlePlaces {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
 /*style butn hours*/
 
 .btnHours {
@@ -566,7 +574,7 @@ ul {
     color: white;
     font-weight: bold;
     margin-top: 4px;
-    margin-left: 20px;
+    margin-left: 200px;
     padding: 12px 20px;
     cursor: pointer;
     font-size: 15px;
